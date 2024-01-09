@@ -24,7 +24,7 @@ const questions = [
     "I absolutely think I would pick Ally.",
     "I think I would pick Ally.",
     "If anything, I think I would pick Ally.",
-	"I might pick either one, depending on who it is.",
+    "I might pick either one, depending on who it is.",
     "If anything, I think I would pick Betray.",
     "I think I would pick Betray.",
     "I absolutely think I would pick Betray."
@@ -33,12 +33,12 @@ const questions = [
   },
   {
     question: "You discover that you are living in a computer simulation where it is permanently the year 1999. You are allowed to take a red pill, which will lead to you waking up from this simulation, or a blue pill, which will allow you to forget what you have just learned. Which one would you take?",
-	type: "multiple-choice",
+    type: "multiple-choice",
     options: [
     "I absolutely would take the red pill.",
     "I would take the red pill.",
     "If anything, I think I would take the red pill.",
-	"I would take neither pill and continue to live in the simulation, knowing that it is a simulation.",
+    "I would take neither pill and continue to live in the simulation, knowing that it is a simulation.",
     "If anything, I think I would take the blue pill.",
     "I would take the blue pill.",
     "I absolutely would take the blue pill."
@@ -327,31 +327,31 @@ function showResult() {
   // Add conditional statements for different archetypes
   if (userResult.archetype === "Mrs. Graves") {
     additionalInfo = "Responsible &#9679; Practical &#9679; Hardworking &#9679; Loyal &#9679; Detail Oriented<br><br>Motivation: To be good, to have integrity, to be in balance with everything<br><br>Dislikes sloppiness and error, attracted to order and high standards for self and others.";
-	
+
   } else if (userResult.archetype === "Ashley Graves") {
     additionalInfo = "Helpful &#9679; Nurturing &#9679; Warm &#9679; Approachable &#9679; Patient<br><br>Motivation: To be loved unconditionally<br><br>Dislikes solitude and impersonal dealings, attracted to service and making personal connections.";
-	imagePath = "img/mrs_graves.png";
+    imagePath = "img/mrs_graves.png";
   } else if (userResult.archetype === "The Lady") {
     additionalInfo = "Confident &#9679; Ambitious &#9679; Self-conscious &#9679; Productive &#9679; Energetic<br><br>Motivation: To feel valuable and worthwhile (not to disappoint others)";
-	imagePath = "img/lady.png";
+    imagePath = "img/lady.png";
   } else if (userResult.archetype === "Nina") {
     additionalInfo = "Creative &#9679; Emotional &#9679; Open &#9679; Offbeat &#9679; Introspective<br><br>Motivation: To find themselves and their significance (to create an identity out of their inner experience)<br><br>Dislikes uniformity and regulation, attracted to creativity and putting their personal mark on things.";
-	imagePath = "img/nina.png";
+    imagePath = "img/nina.png";
   } else if (userResult.archetype === "Andrew Graves") {
     additionalInfo = "Self-sufficient &#9679; Insightful &#9679; Withdrawn &#9679; Analytical &#9679; Introverted<br><br>Motivation: To be capable and competent (to have something to contribute)<br><br>Dislikes intrusions on their time and space, attracted to depth and learning.";
-	imagePath = "img/andrew.png";
+    imagePath = "img/andrew.png";
   } else if (userResult.archetype === "Cult Leader") {
     additionalInfo = "Vigilant &#9679; Organized &#9679; Skeptical &#9679; Trustworthy &#9679; Detail-oriented<br><br>Motivation: To find security and support (to belong somewhere)<br><br>Dislikes unpredictability and rapid change, attracted to clear structures and foresight.";
-	imagePath = "img/cult_leader.png";
+    imagePath = "img/cult_leader.png";
   } else if (userResult.archetype === "Julia") {
     additionalInfo = "Enthusiastic &#9679; Curious &#9679; Outgoing &#9679; Optimistic &#9679; Spontaneous<br><br>Motivation: To be satisfied and content - to have their needs fulfilled<br><br>Dislikes limitations and routines, attracted to new possibilities and excitement.";
-	imagePath = "img/julia.png";
+    imagePath = "img/julia.png";
   } else if (userResult.archetype === "???") {
     additionalInfo = "Confident &#9679; Independent &#9679; Energetic &#9679; Headstrong &#9679; Natural Leader<br><br>Motivation: To protect themselves (to be in control of their own life and destiny)<br><br>Dislikes indecisiveness and indirectness, attracted to strength and strategic action.";
-	imagePath = "img/entity.png";
+    imagePath = "img/entity.png";
   } else if (userResult.archetype === "Mr. Graves") {
     additionalInfo = "Calm &#9679; Agreeable &#9679; Headstrong &#9679; Humble &#9679; Persuasive<br><br>Motivation: To have inner stability (peace of mind)<br><br>Dislikes tension and conflict, attracted to harmony and stability.";
-	imagePath = "img/mr_graves.png";
+    imagePath = "img/mr_graves.png";
   }
 
   resultContainer.innerHTML = `
