@@ -327,10 +327,10 @@ function showResult() {
   // Add conditional statements for different archetypes
   if (userResult.archetype === "Mrs. Graves") {
     additionalInfo = "Responsible &#9679; Practical &#9679; Hardworking &#9679; Loyal &#9679; Detail Oriented<br><br>Motivation: To be good, to have integrity, to be in balance with everything<br><br>Dislikes sloppiness and error, attracted to order and high standards for self and others.";
-
+    imagePath = "img/mrs_graves.png";
   } else if (userResult.archetype === "Ashley Graves") {
     additionalInfo = "Helpful &#9679; Nurturing &#9679; Warm &#9679; Approachable &#9679; Patient<br><br>Motivation: To be loved unconditionally<br><br>Dislikes solitude and impersonal dealings, attracted to service and making personal connections.";
-    imagePath = "img/mrs_graves.png";
+    imagePath = "img/ashley.png";
   } else if (userResult.archetype === "The Lady") {
     additionalInfo = "Confident &#9679; Ambitious &#9679; Self-conscious &#9679; Productive &#9679; Energetic<br><br>Motivation: To feel valuable and worthwhile (not to disappoint others)";
     imagePath = "img/lady.png";
