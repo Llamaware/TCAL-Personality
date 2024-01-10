@@ -180,7 +180,7 @@ const questions = [
     category: "o",
   },
   {
-    question: "14. The following 5 questions take place in a different setting. The answer scale works the same way as before. Select the option on the scale that most closely matches what you would do in the situation.<br><br>You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>As a juror, you are required to discuss the case with fellow jurors during deliberation. How do you approach this interaction?",
+    question: "14. The following 5 questions take place in a different setting. The answer scale works the same way as before. Select the option on the scale that most closely matches what you would do in the situation.<br><br>You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes James' fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>As a juror, you are required to discuss the case with fellow jurors during deliberation. How do you approach this interaction?",
     type: "multiple-choice",
     options: [
       "1 - I am likely to take charge, express my opinions confidently, and actively participate in the discussion.",
@@ -194,7 +194,7 @@ const questions = [
     category: "e",
   },
   {
-    question: "15. You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>During deliberations, you notice that some jurors are having a heated argument. How would you respond?",
+    question: "15. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes James' fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>During deliberations, you notice that some jurors are having a heated argument. How would you respond?",
     type: "multiple-choice",
     options: [
       "1 - I would try to mediate and find a compromise to maintain harmony among the jurors.",
@@ -208,7 +208,7 @@ const questions = [
     category: "a",
   },
   {
-    question: "16. You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>As a juror, you are given a detailed set of instructions on how to evaluate the evidence. How would you handle this information?",
+    question: "16. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes James' fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>As a juror, you are given a detailed set of instructions on how to evaluate the evidence. How would you handle this information?",
     type: "multiple-choice",
     options: [
       "1 - I would carefully review and follow the instructions, ensuring that my decision is based on the facts presented.",
@@ -222,7 +222,7 @@ const questions = [
     category: "c",
   },
   {
-    question: "17. You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>During the trial, the defense presents an emotional plea, depicting the accused as a victim of unfortunate circumstances. How would you react?",
+    question: "17. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes James' fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>During the trial, the defense presents an emotional plea, depicting the accused as a victim of unfortunate circumstances. How would you react?",
     type: "multiple-choice",
     options: [
       "1 - I would not empathize at all with the emotional appeal and I would prioritize objective analysis of the evidence.",
@@ -236,7 +236,7 @@ const questions = [
     category: "es",
   },
   {
-    question: "18. You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>The trial presents unexpected evidence that challenges the initial assumptions. Digital logs from the security system point towards this heist potentially being an inside job. How do you adapt to this new information?",
+    question: "18. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes James' fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>The trial presents unexpected evidence that challenges the initial assumptions. The room was constructed in such a way that it may have been possible for a murderer to kill the victim from outside of the room. How do you adapt to this new information?",
     type: "multiple-choice",
     options: [
       "1 - I would be open-minded, consider the new evidence, and adjust my perspective accordingly.",
