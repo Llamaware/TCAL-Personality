@@ -32,7 +32,7 @@ const questions = [
     category: "a",
   },
   {
-    question: "3. You learn that you live in a simulation where it is permanently the year 1999. You are offered two options.<br><br>Option 1: Exit the simulation to the real world.<br><br>Option 2: Forget you ever learned this and keep on living on in this rather stable environment.<br><br>You do not know what the outside world is like.<br><br>What would you choose to do?",
+    question: "3. You learn that you live in a simulation where it is permanently the year 1999. You are offered two options.<br><br>Option 1: Exit the simulation to the real world.<br><br>Option 2: Forget you ever learned this and keep living on in this rather stable environment.<br><br>You do not know what the outside world is like.<br><br>What would you choose to do?",
     type: "multiple-choice",
     options: [
     "I absolutely would leave the simulation.",

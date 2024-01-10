@@ -26,6 +26,11 @@ body {
   text-align: center;
 }
 
+#intro img {
+  max-width: 100%;
+  height: auto;
+}
+
 .question {
   margin-bottom: 20px;
 }
@@ -33,6 +38,11 @@ body {
 #result {
   text-align: center;
   margin-top: 20px;
+}
+
+#result img {
+  max-width: 100%;
+  height: auto;
 }
 
 button {
