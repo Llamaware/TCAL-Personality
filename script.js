@@ -4,7 +4,7 @@ const categorySums = {};
 
 const questions = [
   {
-    question: "You are standing on the side of the tracks. A runaway train with broken brakes is rushing in your direction, and you see five people tied to the tracks. If you do nothing, the five people will be run over by the train and shall die. Fortunately, there is a lever on your side. If you pull it, you can surely divert the runaway trolley onto the sidetrack. However, one person is tied to the branch line. If the direction of the train is changed, the person will die.<br><br>Would you pull the lever, killing one person? Or would you do nothing and leave the five people to die?",
+    question: "1. You are standing on the side of the tracks. A runaway train with broken brakes is rushing in your direction, and you see five people tied to the tracks. If you do nothing, the five people will be run over by the train and shall die. Fortunately, there is a lever on your side. If you pull it, you can surely divert the runaway trolley onto the sidetrack. However, one person is tied to the branch line. If the direction of the train is changed, the person will die.<br><br>Would you pull the lever, killing one person? Or would you do nothing and leave the five people to die?",
     type: "multiple-choice",
     options: [
     "I absolutely would pull it.",
@@ -18,7 +18,7 @@ const questions = [
     category: "c",
   },
   {
-    question: "You and a close friend have been arrested for a crime you both committed. You are being held in separate cells with no means of communication. The prosecutor offers you a deal:<br><br>Option 1: If both you and your friend choose to remain silent (Ally), you'll each get a one-year sentence for a lesser charge.<br><br>Option 2: If you betray your friend (Betray) while your friend remains silent, you'll go free, but your friend will get a three-year sentence. If your friend betrays you while you remain silent, the situation is reversed.<br><br>If both of you betray each other, you both get a two-year sentence.<br><br>Select the choice that best represents what you would do in this situation.",
+    question: "2. You and a close friend have been arrested for a crime you both committed. You are being held in separate cells with no means of communication. The prosecutor offers you a deal:<br><br>Option 1: If both you and your friend choose to remain silent (Ally), you'll each get a one-year sentence for a lesser charge.<br><br>Option 2: If you betray your friend (Betray) while your friend remains silent, you'll go free, but your friend will get a three-year sentence. If your friend betrays you while you remain silent, the situation is reversed.<br><br>If both of you betray each other, you both get a two-year sentence.<br><br>Select the choice that best represents what you would do in this situation.",
     type: "multiple-choice",
     options: [
     "I absolutely think I would pick Ally.",
@@ -32,21 +32,21 @@ const questions = [
     category: "a",
   },
   {
-    question: "You discover that you are living in a computer simulation where it is permanently the year 1999. You are allowed to take a red pill, which will lead to you waking up from this simulation, or a blue pill, which will allow you to forget what you have just learned. Which one would you take?",
+    question: "3. You learn that you live in a simulation where it is permanently the year 1999. You are offered two options: To exit the simulation to the real world, or to forget you ever learned this and to keep on living on in this rather stable environment. You do not know what the outside world is like.<br><br>What would you choose to do?",
     type: "multiple-choice",
     options: [
-    "I absolutely would take the red pill.",
-    "I would take the red pill.",
-    "If anything, I think I would take the red pill.",
-    "I would take neither pill and continue to live in the simulation, knowing that it is a simulation.",
-    "If anything, I think I would take the blue pill.",
-    "I would take the blue pill.",
-    "I absolutely would take the blue pill."
+    "I absolutely would leave the simulation.",
+    "I would leave the simulation.",
+    "If anything, I think I would leave the simulation.",
+    "I would continue to live within the simulation, knowing that it is a simulation.",
+    "If anything, I think I would choose to forget what I learned.",
+    "I would choose to forget what I learned.",
+    "I absolutely would choose to forget what I learned."
     ],
     category: "o",
   },
   {
-    question: "You have to execute one of these people based on these descriptions. Who do you choose?",
+    question: "4. You have to execute one of these people based on these descriptions. Who do you choose?",
     type: "multiple-choice",
     options: [
     "Person 1: Donates a few thousand dollars to charity every year. Once robbed a Burger King.",
@@ -55,34 +55,64 @@ const questions = [
     "Person 4: Is a 2 month old baby. Has a 1% chance of causing World War 3.",
     "Person 5: Makes free food for the homeless. Constantly thinks about cannibalizing someone.",
     ],
-    category: "execute",
+    category: "ex",
   },
   {
-    question: "A supernatural being says they are sending you back to 1979. You can't come back to the present. You are provided with $50,000 in cash and an identity. In addition, you can select one of the following things to bring with you. What would you bring?",
+    question: "5. You are selected as part of a time-travel experiment to be sent back to the year 1979. You can't come back to the present. You will be provided with $50,000 in cash and an identity. In addition, you can select one of the following things to bring with you. What would you bring?",
     type: "multiple-choice",
     options: [
     "An electronic tablet containing an offline copy of Wikipedia from 2024.",
     "A bookshelf full of best-selling novels that were published after 1980, including the entire Harry Potter series.",
-    "A collection of modern medications with directions for their synthesis.",
-    "A new computer with a collection of video games and software on it and detailed schematics for its construction.",
-    "The deed to a Swiss chalet.",
+    "A collection of modern medications and vaccines, with directions for their synthesis.",
+    "A new computer with a collection of video games and software on it, and detailed schematics for its construction.",
+    "The deed to an estate with a mansion, located in any country of your choice.",
     ],
-    category: "time",
+    category: "ti",
   },
   {
-    question: "You find yourself transported into an alternate universe, where you are a student attending a magic academy. Which of the following magic spells would you choose to have?",
+    question: "6. You fall asleep one night and find yourself waking up in an alternate universe, where you are a student attending a magic academy. The technology level here is similar to 2024 Earth.<br><br>Which of the following magic spells would you choose to have?",
     type: "multiple-choice",
     options: [
     "King's Roar - Turn anything that you look at into sand.",
     "Split Card - Create temporary clones of yourself.",
-    "Unleash the Beast - Transform yourself into a wolf, gaining enhanced speed, strength, and senses.",
+    "Unleash the Beast - Transform into a wolf, gaining enhanced speed, strength, and senses.",
     "It's a Deal - Take any power from another person once they sign a magical contract with you.",
     "Bind the Heart - Block and divert an opponent's magic.",
+    "Snake Whisperer - Hypnotize your target into doing your bidding.",
+    "Oasis Maker - Create large quantities of water.",
     ],
-    category: "power",
+    category: "pw",
   },
   {
-    question: "The following 10 questions are answered using a scale that ranges from 1 to 7. Select the option on the scale that most closely matches what you would do in the situation.<br><br>You find yourself in a magical kingdom where you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>In the enchanted forest, you come across a group of talking creatures having a lively celebration. They invite you to join them. How do you respond?",
+    question: "7. One day while you are crossing the road, you are hit by a truck, meeting an untimely death. The Goddess of Reincarnation appears before you and tells you that you are allowed to choose what your next life will be like. She will give you the knowledge and skills needed to make it a reality.<br><br>The world you are chosen to reincarnate in is that of a fantasy action webnovel, with early 1800's level technology. In this world, magic is a skill that can be learned. You will keep the memories of your past life.<br><br>What kind of life would you choose to have in this next world?",
+    type: "multiple-choice",
+    options: [
+    "Gain extensive political, social, and economic knowledge and experience relevant to this new world. Become a monarch, ruling over a large country.",
+    "Gain knowledge and skills in survival and combat. Become an adventurer or mercenary in a party, traveling across the lands and taking on difficult quests.",
+    "Gain complete knowledge of modern medicine from 2024 Earth. Become a renowned surgeon or doctor and save thousands of lives.",
+    "Gain knowledge of mechanical and electrical engineering from 2024 Earth. Become an engineer and develop new technologies, starting a technological revolution.",
+    "Gain skills of deduction and perception and knowledge of forensic science from 2024 Earth. Become a great detective, solving difficult cases.",
+    "Gain knowledge of alchemy and blacksmithing. Become a creator of cutting-edge magical weapons, potions, and elixirs.",
+    "Gain advanced knowledge of magic spells and the elements. Become a powerful archmage residing in the Mages' Tower, or the headmage of a magic institute.",
+    ],
+    category: "e",
+  },
+  {
+    question: "8. The following 11 questions are answered using a scale that ranges from 1 to 7. Select the option on the scale that most closely matches what you would do in the situation.<br><br>After careful deliberation, you make your choice, and the Goddess of Reincarnation sends you off to this next world.<br><br>How well would you be able to cope with living in this new and unfamiliar setting, where technology is limited?",
+    type: "multiple-choice",
+    options: [
+      "1 - I would embrace and accept this new world completely and set forth to make my choice a reality, determined to create a better life than my past one.",
+      "2",
+      "3",
+      "4 - I would miss my old life, but I would also look forward to having new friends and family in this world. I might seek out the people from my previous life, hoping that they have also reincarnated here, and I might also try to recreate some food or culture from my past world.",
+      "5",
+      "6",
+      "7 - I would not adjust well at all to life in this new world. I might become depressed, and in the worst case, I would not be able to function at all."
+    ],
+    category: "es",
+  },
+  {
+    question: "9. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>In the enchanted forest, you come across a group of talking creatures having a lively celebration. They invite you to join them. How do you respond?",
     type: "multiple-choice",
     options: [
       "1 - I enthusiastically join the celebration, eager to interact with the creatures and make new friends.",
@@ -96,49 +126,49 @@ const questions = [
     category: "e",
   },
   {
-    question: "You find yourself in a magical kingdom where you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>On your journey, you encounter a fellow traveler who is struggling with a difficult puzzle. How do you assist them?",
+    question: "10. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>On your journey, you encounter a fellow traveler who is struggling with a difficult puzzle. How do you assist them?",
     type: "multiple-choice",
     options: [
       "1 - I eagerly offer my help, patiently explaining the puzzle and working together to solve it.",
       "2",
       "3",
-      "4 - I provide assistance but may also encourage the traveler to try figuring it out independently.",
+      "4 - I would provide some assistance or advice, but would also be careful not to get too sidetracked.",
       "5",
       "6",
-      "7 - I might offer some advice but would prioritize completing the quest rather than spending too much time helping."
+      "7 - I would not offer any advice and would prioritize completing the quest rather than spending any time helping."
     ],
     category: "a",
   },
   {
-    question: "You find yourself in a magical kingdom where you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>You receive a magical map with detailed instructions for the quest. How do you approach using the map?",
+    question: "11. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>You receive a magical tome with information about events yet to come. How do you approach using the tome?",
     type: "multiple-choice",
     options: [
-      "1 - I carefully study the map, follow the instructions precisely, and ensure every step aligns with the provided guidance.",
+      "1 - I carefully study the tome, create an extensive plan that takes into account the future events precisely, and ensure every step aligns with this plan.",
       "2",
       "3",
-      "4 - While I consider the map, I might also trust my instincts and adapt the plan as needed during the journey.",
+      "4 - While I consider the tome's information, I might also trust my instincts and be skeptical of its contents, being prepared to alter the plan as needed.",
       "5",
       "6",
-      "7 - I might find the map too restrictive and prefer to explore the kingdom freely, trusting my intuition."
+      "7 - I might not use the information at all and prefer to explore the kingdom freely, trusting my intuition and the original plan."
     ],
     category: "c",
   },
   {
-    question: "You find yourself in a magical kingdom where you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>During the quest, you encounter a daunting obstacle that requires overcoming a personal fear. How do you handle this situation?",
+    question: "12. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>During the quest, your party encounters a ferocious monster that engages you in battle. As a psychological attack, you are suddenly assaulted by visions of your worst fears. How do you handle this situation?",
     type: "multiple-choice",
     options: [
-      "1 - I take a deep breath, acknowledge my fear, and courageously face the obstacle, determined to overcome it.",
+      "1 - I take a deep breath, acknowledge my fear, and courageously deflect the attacks, determined to overcome this enemy.",
       "2",
       "3",
-      "4 - I might feel uneasy but would cautiously approach the obstacle, taking my time to gather the courage to proceed.",
+      "4 - I might feel anxious but would continue the battle, knowing that my allies have my back.",
       "5",
       "6",
-      "7 - I could be paralyzed by fear, finding it challenging to continue the quest and considering turning back."
+      "7 - I could be paralyzed by fear, finding it challenging to continue the quest and considering fleeing from the fight."
     ],
     category: "es",
   },
   {
-    question: "You find yourself in a magical kingdom where you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>In a mysterious cavern, you discover an ancient book containing powerful spells. How do you react to this newfound knowledge?",
+    question: "13. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>In a mysterious cavern, you discover an ancient book containing powerful spells. How do you react to this newfound knowledge?",
     type: "multiple-choice",
     options: [
       "1 - I am excited to explore the potential of the spells, eager to learn and experiment with the magical abilities.",
@@ -152,7 +182,7 @@ const questions = [
     category: "o",
   },
   {
-    question: "You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>As a juror, you are required to discuss the case with fellow jurors during deliberation. How do you approach this interaction?",
+    question: "14. The following 5 questions take place in a different setting. The answer scale works the same way as before. Select the option on the scale that most closely matches what you would do in the situation.<br><br>You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>As a juror, you are required to discuss the case with fellow jurors during deliberation. How do you approach this interaction?",
     type: "multiple-choice",
     options: [
       "1 - I am likely to take charge, express my opinions confidently, and actively participate in the discussion.",
@@ -166,7 +196,7 @@ const questions = [
     category: "e",
   },
   {
-    question: "You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>During deliberations, you notice that some jurors are having a heated argument. How would you respond?",
+    question: "15. You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>During deliberations, you notice that some jurors are having a heated argument. How would you respond?",
     type: "multiple-choice",
     options: [
       "1 - I would try to mediate and find a compromise to maintain harmony among the jurors.",
@@ -180,7 +210,7 @@ const questions = [
     category: "a",
   },
   {
-    question: "You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>As a juror, you are given a detailed set of instructions on how to evaluate the evidence. How would you handle this information?",
+    question: "16. You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>As a juror, you are given a detailed set of instructions on how to evaluate the evidence. How would you handle this information?",
     type: "multiple-choice",
     options: [
       "1 - I would carefully review and follow the instructions, ensuring that my decision is based on the facts presented.",
@@ -194,10 +224,10 @@ const questions = [
     category: "c",
   },
   {
-    question: "You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>During the trial, the defense presents an emotional plea, depicting the accused as a victim of unfortunate circumstances. How would you react?",
+    question: "17. You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>During the trial, the defense presents an emotional plea, depicting the accused as a victim of unfortunate circumstances. How would you react?",
     type: "multiple-choice",
     options: [
-      "1 - I would not empathize with the emotional appeal and I would prioritize objective analysis of the evidence.",
+      "1 - I would not empathize at all with the emotional appeal and I would prioritize objective analysis of the evidence.",
       "2",
       "3",
       "4 - I might feel some sympathy but would try to remain focused on the facts and evidence.",
@@ -208,7 +238,7 @@ const questions = [
     category: "es",
   },
   {
-    question: "You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>The trial presents unexpected evidence that challenges the initial assumptions. How do you adapt to this new information?",
+    question: "18. You are a juror in a court trial. The trial involves a person accused of participating in a heist where a valuable gem was stolen from a museum. The evidence includes security camera footage showing the accused near the scene of the crime, eyewitness testimonies, and the accused's alibi.<br><br>The trial presents unexpected evidence that challenges the initial assumptions. Digital logs from the security system point towards this heist potentially being an inside job. How do you adapt to this new information?",
     type: "multiple-choice",
     options: [
       "1 - I would be open-minded, consider the new evidence, and adjust my perspective accordingly.",
