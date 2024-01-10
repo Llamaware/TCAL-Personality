@@ -18,7 +18,7 @@ const questions = [
     category: "c",
   },
   {
-    question: "2. You and a close friend have been arrested for a crime you both committed. You are being held in separate cells with no means of communication. The prosecutor offers you a deal:<br><br>Option 1: If both you and your friend choose to remain silent (Ally), you'll each get a one-year sentence for a lesser charge.<br><br>Option 2: If you betray your friend (Betray) while your friend remains silent, you'll go free, but your friend will get a three-year sentence. If your friend betrays you while you remain silent, the situation is reversed.<br><br>If both of you betray each other, you both get a two-year sentence.<br><br>Select the choice that best represents what you would do in this situation.",
+    question: "2. You and a close friend have been arrested for a crime you both committed. You are being held in separate cells with no means of communication. The prosecutor offers you a deal.<br><br>Option 1: If both you and your friend choose to remain silent (Ally), you'll each get a one-year sentence for a lesser charge.<br><br>Option 2: If you betray your friend (Betray) while your friend remains silent, you'll go free, but your friend will get a three-year sentence. If your friend betrays you while you remain silent, the situation is reversed.<br><br>If both of you betray each other, you both get a two-year sentence.<br><br>Select the choice that best represents what you would do in this situation.",
     type: "multiple-choice",
     options: [
     "I absolutely think I would pick Ally.",
@@ -32,13 +32,13 @@ const questions = [
     category: "a",
   },
   {
-    question: "3. You learn that you live in a simulation where it is permanently the year 1999. You are offered two options: To exit the simulation to the real world, or to forget you ever learned this and to keep on living on in this rather stable environment. You do not know what the outside world is like.<br><br>What would you choose to do?",
+    question: "3. You learn that you live in a simulation where it is permanently the year 1999. You are offered two options.<br><br>Option 1: Exit the simulation to the real world.<br><br>Option 2: Forget you ever learned this and keep on living on in this rather stable environment.<br><br>You do not know what the outside world is like.<br><br>What would you choose to do?",
     type: "multiple-choice",
     options: [
     "I absolutely would leave the simulation.",
     "I would leave the simulation.",
     "If anything, I think I would leave the simulation.",
-    "I would continue to live within the simulation, knowing that it is a simulation.",
+    "I might choose neither option and just continue living within the simulation, knowing that it is a simulation.",
     "If anything, I think I would choose to forget what I learned.",
     "I would choose to forget what I learned.",
     "I absolutely would choose to forget what I learned."
