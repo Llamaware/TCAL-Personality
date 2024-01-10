@@ -38,7 +38,7 @@ const questions = [
     "I absolutely would leave the simulation.",
     "I would leave the simulation.",
     "If anything, I think I would leave the simulation.",
-    "I might choose neither option and just continue living within the simulation, knowing that it is a simulation.",
+    "I would choose neither option and just continue living within the simulation, knowing that it is a simulation.",
     "If anything, I think I would choose to forget what I learned.",
     "I would choose to forget what I learned.",
     "I absolutely would choose to forget what I learned."
@@ -104,7 +104,7 @@ const questions = [
       "1 - I would embrace and accept this new world completely and set forth to make my choice a reality, determined to create a better life than my past one.",
       "2",
       "3",
-      "4 - I would miss my old life, but I would also look forward to having new friends and family in this world. I might seek out the people from my previous life, hoping that they have also reincarnated here, and I might also try to recreate some food or culture from my past world.",
+      "4 - I would miss my old life, but I would also look forward to having new friends and family in this world. I might seek out the people from my previous life, hoping that they have also reincarnated here.",
       "5",
       "6",
       "7 - I would not adjust well at all to life in this new world. I might become depressed, and in the worst case, I would not be able to function at all."
