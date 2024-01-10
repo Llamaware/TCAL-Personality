@@ -55,33 +55,31 @@ const questions = [
     "Person 4: Is a 2 month old baby. Has a 1% chance of causing World War 3.",
     "Person 5: Makes free food for the homeless. Constantly thinks about cannibalizing someone.",
     ],
-    category: "ex",
+    category: "x",
   },
   {
     question: "5. You are selected as part of a time-travel experiment to be sent back to the year 1979. You can't come back to the present. You will be provided with $50,000 in cash and an identity. In addition, you can select one of the following things to bring with you. What would you bring?",
     type: "multiple-choice",
     options: [
-    "An electronic tablet containing an offline copy of Wikipedia from 2024.",
-    "A bookshelf full of best-selling novels that were published after 1980, including the entire Harry Potter series.",
-    "A collection of modern medications and vaccines, with directions for their synthesis.",
-    "A new computer with a collection of video games and software on it, and detailed schematics for its construction.",
     "The deed to an estate with a mansion, located in any country of your choice.",
+    "A new computer with a collection of video games and software on it, and detailed schematics for its construction.",
+    "An electronic tablet containing an offline copy of Wikipedia from 2024.",
+    "A collection of modern medications and vaccines, with directions for their synthesis.",
+    "A bookshelf full of best-selling novels that were published after 1980, including the entire Harry Potter series.",
     ],
-    category: "ti",
+    category: "x",
   },
   {
     question: "6. You fall asleep one night and find yourself waking up in an alternate universe, where you are a student attending a magic academy. The technology level here is similar to 2024 Earth.<br><br>Which of the following magic spells would you choose to have?",
     type: "multiple-choice",
     options: [
-    "King's Roar - Turn anything that you look at into sand.",
-    "Split Card - Create temporary clones of yourself.",
     "Unleash the Beast - Transform into a wolf, gaining enhanced speed, strength, and senses.",
-    "It's a Deal - Take any power from another person once they sign a magical contract with you.",
-    "Bind the Heart - Block and divert an opponent's magic.",
     "Snake Whisperer - Hypnotize your target into doing your bidding.",
-    "Oasis Maker - Create large quantities of water.",
+    "Split Card - Create temporary clones of yourself.",
+    "It's a Deal - Take any power from another person once they sign a magical contract with you.",
+    "Fae Of Maleficence - Place a large area within time stasis. Everyone within that area will be put to sleep.",
     ],
-    category: "pw",
+    category: "x",
   },
   {
     question: "7. One day while you are crossing the road, you are hit by a truck, meeting an untimely death. The Goddess of Reincarnation appears before you and tells you that you are allowed to choose what your next life will be like. She will give you the knowledge and skills needed to make it a reality.<br><br>The world you are chosen to reincarnate in is that of a fantasy action webnovel, with early 1800's level technology. In this world, magic is a skill that can be learned. You will keep the memories of your past life.<br><br>What kind of life would you choose to have in this next world?",
@@ -402,15 +400,25 @@ function showDebug() {
   if (!debugContainer) {
     const newDebugContainer = document.createElement('div');
     newDebugContainer.id = 'debug';
+
+    // Calculate average score for each category
+    const averageScores = {};
+    for (const category in answers) {
+      const values = answers[category];
+      const average = (values.reduce((sum, value) => sum + value, 0) / values.length).toFixed(2); // Truncate to 2 decimal places
+      averageScores[category] = average;
+    }
+
     newDebugContainer.innerHTML = `
       <h3>Debug - User Answers:</h3>
       ${Object.keys(answers).map(category => `
-        <h4>${category}:</h4>
+        <h4>${category}: ${averageScores[category]}</h4>
         <ul>
-          ${answers[category].map((answer, index) => `<li><strong>Question ${index + 1}:</strong> ${answer}</li>`).join('')}
+          ${answers[category].map((answer, index) => `<li><strong>q${index + 1}:</strong> ${answer}</li>`).join('')}
         </ul>
       `).join('')}
     `;
+
     document.getElementById('quiz-content').appendChild(newDebugContainer);
   }
 
@@ -421,25 +429,17 @@ function showDebug() {
   }
 }
 
-
-function calculateResult() {
-  // You can implement your logic to calculate the result based on the user's answers
-  // For simplicity, this example just returns a random result
-  const results = ["Mrs. Graves", "Ashley Graves", "The Lady", "Nina", "Andrew Graves", "Cult Leader", "Julia", "???", "Mr. Graves"];
-  return results[Math.floor(Math.random() * results.length)];
-}
-
 function calculateResult() {
   const archetypeScores = {
-    "Mrs. Graves": { e: 2.5, es: 2.5, a: 4 , o: 2.5, c: 7},
-    "Ashley Graves": { e: 5.5, es: 4, a: 5.5 , o: 4, c: 4},
-    "The Lady": { e: 5.5, es: 4, a: 4 , o: 4, c: 4},
-    "Nina": { e: 4, es: 2.5, a: 4 , o: 5.5, c: 4},
-    "Andrew Graves": { e: 1, es: 4, a: 1 , o: 5.5, c: 4},
-    "Cult Leader": { e: 4, es: 2.5, a: 4 , o: 1, c: 4},
-    "Julia": { e: 7, es: 5.5, a: 4 , o: 5.5, c: 2.5},
-    "???": { e: 7, es: 7, a: 2.5 , o: 5.5, c: 5.5},
-    "Mr. Graves": { e: 2.5, es: 5.5, a: 5.5 , o: 1, c: 2.5},
+    "Mrs. Graves": { e: 2.5, es: 2.5, a: 4 , o: 2.5, c: 7, x: 4, },
+    "Ashley Graves": { e: 5.5, es: 4, a: 5.5 , o: 4, c: 4, x: 5.5, },
+    "The Lady": { e: 5.5, es: 4, a: 4 , o: 4, c: 4, x: 6, },
+    "Nina": { e: 4, es: 2.5, a: 4 , o: 5.5, c: 4, x: 3.5, },
+    "Andrew Graves": { e: 1, es: 4, a: 1 , o: 5.5, c: 4, x: 5, },
+    "Cult Leader": { e: 4, es: 2.5, a: 4 , o: 1, c: 4, x: 6.5, },
+    "Julia": { e: 7, es: 5.5, a: 4 , o: 5.5, c: 2.5, x: 4.5, },
+    "???": { e: 7, es: 7, a: 2.5 , o: 5.5, c: 5.5, x: 7, },
+    "Mr. Graves": { e: 2.5, es: 5.5, a: 5.5 , o: 1, c: 2.5, x: 3, },
   };
 
   const typeAverages = {};
