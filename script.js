@@ -32,7 +32,7 @@ const questions = [
     category: "a",
   },
   {
-    question: "3. You learn that you live in a simulation where it is permanently the year 1999. One day, a man in a coat walks up to you and offers you two options.<br><br>Option 1: Exit the simulation to the real world.<br><br>Option 2: Forget that you ever learned this and keep living on in this rather stable environment.<br><br>You do not know what the outside world is like. You also do not know if you will ever learn this information again if you choose to forget it.<br><br>What would you choose to do?",
+    question: "3. You learn that you live in a simulation where it is permanently the year 1999. One day, a strange man in a coat walks up to you and offers you two options.<br><br>Option 1: Exit the simulation to the real world.<br><br>Option 2: Forget that you ever learned this and keep living on in this rather stable environment.<br><br>You do not know what the outside world is like. You also do not know if you will ever learn this information again if you choose to forget it.<br><br>What would you choose to do?",
     type: "multiple-choice",
     options: [
     "I absolutely would leave the simulation.",
@@ -49,13 +49,13 @@ const questions = [
     question: "4. You have to execute one of the following people based on these descriptions. Who do you choose?",
     type: "multiple-choice",
     options: [
-    "Person 1: An engineer who donates a few thousand dollars to charity every year. Once robbed a Burger King.",
+    "Person 1: An engineer who donates a few thousand dollars to charity every year. Once robbed a Taco Bell. Currently works for the government in research and development for weapons, such as bombs and missiles.",
     "Person 2: A former serial killer, successfully reintegrated into society after spending ten years in a psychiatric institution. Currently works in a post office.",
     "Person 3: A researcher who will develop a vaccine for HIV by next year. Has a woman trapped in his basement against her will.",
     "Person 4: Is a 2 month old baby. Has a 0.01% chance of causing World War 3.",
     "Person 5: Runs a no kill animal shelter. Beats her children.",
-    "Person 6: A social worker who makes free food for the homeless. Is depressed and suicidal, with several suicide attempts in the past.",
-    "Person 7: A computer programmer and true crime enthusiast. Has plans to murder someone three months from now, just to see what it's like.",
+    "Person 6: A social worker who makes free food for the homeless. Has depression and several suicide attempts in the past. Currently wants to die.",
+    "Person 7: A computer programmer and true crime enthusiast. Has plans to murder and cannibalize someone three months from now, just to see what it's like.",
     ],
     category: "x",
   },
