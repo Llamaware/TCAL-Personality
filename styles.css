@@ -85,13 +85,31 @@ button {
   background-color: #f9f9f9;
 }
 
+#analysis {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+#feedbackText {
+  text-align: center;
+  color: red;
+}
+
 .slider-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto; /* Center the slider within the container */
+  margin: 0 auto;
 }
 
 .slider-container input {
-  width: 80%; /* Set the width of the slider to 80% of the container */
+  width: 80%;
+}
+
+footer {
+  color: white;
+  text-align: center;
 }

@@ -21,13 +21,13 @@ const questions = [
     question: "2. You and a close friend have been arrested for a crime you both committed. You are being held in separate cells with no means of communication. The prosecutor offers you a deal.<br><br>Option 1: If both you and your friend choose to remain silent (Ally), you'll each get a one-year sentence for a lesser charge.<br><br>Option 2: If you betray your friend (Betray) while your friend remains silent, you'll go free, but your friend will get a three-year sentence. If your friend betrays you while you remain silent, the situation is reversed.<br><br>If both of you betray each other, you both get a two-year sentence.<br><br>Select the choice that best represents what you would do in this situation.",
     type: "multiple-choice",
     options: [
-    "I absolutely think I would pick Ally.",
-    "I think I would pick Ally.",
+    "I absolutely would pick Ally.",
+    "I would pick Ally.",
     "If anything, I think I would pick Ally.",
     "I might pick either one, depending on who it is.",
     "If anything, I think I would pick Betray.",
-    "I think I would pick Betray.",
-    "I absolutely think I would pick Betray."
+    "I would pick Betray.",
+    "I absolutely would pick Betray."
     ],
     category: "a",
   },
@@ -180,7 +180,7 @@ const questions = [
     category: "o",
   },
   {
-    question: "14. The following 5 questions take place in a different setting. The answer scale works the same way as before. Select the option on the scale that most closely matches what you would do in the situation.<br><br>You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes James' fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>As a juror, you are required to discuss the case with fellow jurors during deliberation. How do you approach this interaction?",
+    question: "14. The following 5 questions take place in a different setting. The answer scale works the same way as before. Select the option on the scale that most closely matches what you would do in the situation.<br><br>You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes Answell's fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>As a juror, you are required to discuss the case with fellow jurors during deliberation. How do you approach this interaction?",
     type: "multiple-choice",
     options: [
       "1 - I am likely to take charge, express my opinions confidently, and actively participate in the discussion.",
@@ -194,7 +194,7 @@ const questions = [
     category: "e",
   },
   {
-    question: "15. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes James' fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>During deliberations, you notice that some jurors are having a heated argument. How would you respond?",
+    question: "15. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes Answell's fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>During deliberations, you notice that some jurors are having a heated argument. How would you respond?",
     type: "multiple-choice",
     options: [
       "1 - I would try to mediate and find a compromise to maintain harmony among the jurors.",
@@ -208,7 +208,7 @@ const questions = [
     category: "a",
   },
   {
-    question: "16. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes James' fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>As a juror, you are given a detailed set of instructions on how to evaluate the evidence. How would you handle this information?",
+    question: "16. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes Answell's fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>As a juror, you are given a detailed set of instructions on how to evaluate the evidence. How would you handle this information?",
     type: "multiple-choice",
     options: [
       "1 - I would carefully review and follow the instructions, ensuring that my decision is based on the facts presented.",
@@ -222,7 +222,7 @@ const questions = [
     category: "c",
   },
   {
-    question: "17. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes James' fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>During the trial, the defense presents an emotional plea, depicting the accused as a victim of unfortunate circumstances. How would you react?",
+    question: "17. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes Answell's fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>During the trial, the defense presents an emotional plea, depicting the accused as a victim of unfortunate circumstances. How would you react?",
     type: "multiple-choice",
     options: [
       "1 - I would not empathize at all with the emotional appeal and I would prioritize objective analysis of the evidence.",
@@ -236,7 +236,7 @@ const questions = [
     category: "es",
   },
   {
-    question: "18. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes James' fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>The trial presents unexpected evidence that challenges the initial assumptions. The room was constructed in such a way that it may have been possible for a murderer to kill the victim from outside of the room. How do you adapt to this new information?",
+    question: "18. You are a juror in a court trial. The trial involves a suspect, James Caplon Answell, being accused of the murder of his future father-in-law, Avory Hume. Hume was found dead in his office, impaled through the chest by a large arrow. The evidence includes Answell's fingerprints being found on the murder weapon, eyewitness testimonies placing him in the same room as the victim at the time of death, and the accused's lack of an alibi.<br><br>The trial presents unexpected evidence that challenges the initial assumptions. The room was constructed in such a way that it may have been possible for a murderer to kill the victim from outside of the room. How do you adapt to this new information?",
     type: "multiple-choice",
     options: [
       "1 - I would be open-minded, consider the new evidence, and adjust my perspective accordingly.",
@@ -254,6 +254,7 @@ const questions = [
 
 function startQuiz() {
   document.getElementById('intro').style.display = 'none';
+  document.getElementById('page-footer').style.display = 'none';
   showQuestion();
 }
 
@@ -273,6 +274,7 @@ function showQuestion() {
         <label for="${option}">${option}</label><br>
       `).join('')}
       <button onclick="nextQuestion()">Next</button>
+	  <div id="feedbackText"></div>
     `;
   } else if (current.type === "checkbox") {
     questionElement.innerHTML = `
@@ -282,6 +284,7 @@ function showQuestion() {
         <label for="${option}">${option}</label><br>
       `).join('')}
       <button onclick="nextQuestion()">Next</button>
+	  <div id="feedbackText"></div>
     `;
   } else if (current.type === "slider") {
     questionElement.innerHTML = `
@@ -292,6 +295,7 @@ function showQuestion() {
         <span>${current.labels[1]}</span>
       </div>
       <button onclick="nextQuestion()">Next</button>
+	  <div id="feedbackText"></div>
     `;
 
     const slider = questionElement.querySelector('#sliderValue');
@@ -340,7 +344,10 @@ function nextQuestion() {
       showResult();
     }
   } else {
-    alert("Please select an answer before moving to the next question.");
+    const feedbackText = document.getElementById('feedbackText');
+    if (feedbackText) {
+      feedbackText.innerText = "Please select an answer before moving to the next question.";
+    }
   }
 }
 
@@ -389,9 +396,47 @@ function showResult() {
       <p>Similarity Score: <strong>${similarityScore.toFixed(2)}</strong></p>
       <p>${additionalInfo}</p>
       <img src="${imagePath}" alt="${userResult.archetype} Image"> <!-- Display the archetype-specific image -->
-      <button onclick="showDebug()" id="showDebugBtn">Show Answers</button>
+      <button onclick="showAnalysis()" id="showAnalysisBtn">Show Analysis</button>
+      <button onclick="showDebug()" id="showDebugBtn">Show Debug</button>
     </div>
   `;
+}
+
+function showAnalysis() {
+  const analysisContainer = document.getElementById('analysis');
+  const userResult = calculateResult();
+
+  if (!analysisContainer) {
+    const newAnalysisContainer = document.createElement('div');
+    newAnalysisContainer.id = 'analysis';
+    
+    // Add conditional statements for different archetypes
+    if (userResult.archetype === "Mrs. Graves") {
+      newAnalysisContainer.innerHTML = "[No data]";
+    } else if (userResult.archetype === "Ashley Graves") {
+      newAnalysisContainer.innerHTML = "[No data]";
+    } else if (userResult.archetype === "The Lady") {
+      newAnalysisContainer.innerHTML = "[No data]";
+    } else if (userResult.archetype === "Nina") {
+      newAnalysisContainer.innerHTML = "[No data]";
+    } else if (userResult.archetype === "Andrew Graves") {
+      newAnalysisContainer.innerHTML = "[No data]";
+    } else if (userResult.archetype === "Cult Leader") {
+      newAnalysisContainer.innerHTML = "[No data]";
+    } else if (userResult.archetype === "Julia") {
+      newAnalysisContainer.innerHTML = "[No data]";
+    } else if (userResult.archetype === "???") {
+      newAnalysisContainer.innerHTML = "[No data]";
+    } else if (userResult.archetype === "Mr. Graves") {
+      newAnalysisContainer.innerHTML = "[No data]";
+    }
+    document.getElementById('quiz-content').appendChild(newAnalysisContainer);
+  }
+  // Disable the button after it's clicked
+  const showAnalysisBtn = document.getElementById('showAnalysisBtn');
+  if (showAnalysisBtn) {
+    showAnalysisBtn.disabled = true;
+  }
 }
 
 function showDebug() {
@@ -486,3 +531,21 @@ function calculateSimilarityScore(userResult) {
   // Access the similarity score from the calculated result
   return userResult.similarityScore;
 }
+
+// Function to generate a random number between 0 and 1
+function getRandomNumber() {
+  return Math.random();
+}
+
+// Function to set the image source based on a random number
+function setRandomImage() {
+  // Get the reference to the image element
+  var introImage = document.querySelector('#intro img');
+
+  var randomValue = getRandomNumber();
+  if (randomValue < 0.3) {
+    introImage.src = 'img/profile_jp.png';
+  }
+}
+
+window.onload = setRandomImage;
