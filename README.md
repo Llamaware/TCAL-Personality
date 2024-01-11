@@ -4,8 +4,8 @@ A personality test that matches the user to one of nine psychological profiles.
 
 ### Personality Types
 
-| Enneagram Type |              Title             |   Character   |
-|:--------------:|:------------------------------:|:-------------:|
+| Enneagram Type | Title                          | Character     |
+|:--------------:|--------------------------------|---------------|
 |        1       | The Reformer/The Perfectionist | Mrs. Graves   |
 |        2       | The Helper/The Giver           | Ashley Graves |
 |        3       | The Achiever                   | The Lady      |
