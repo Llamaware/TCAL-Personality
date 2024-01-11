@@ -4,13 +4,13 @@ const categorySums = {};
 
 const questions = [
   {
-    question: "1. You are standing on the side of the tracks. A runaway train with broken brakes is rushing in your direction, and you see five people tied to the tracks. If you do nothing, the five people will be run over by the train and shall die. Fortunately, there is a lever on your side. If you pull it, you can surely divert the runaway trolley onto the sidetrack. However, one person is tied to the branch line. If the direction of the train is changed, the person will die.<br><br>Would you pull the lever, killing one person? Or would you do nothing and leave the five people to die?",
+    question: "1. You are standing on the side of a railroad. A runaway train with broken brakes is rushing in your direction, and you see five people tied to the tracks. If you do nothing, the five people will be run over by the train and shall die. Fortunately, there is a lever on your side. If you pull it, you can surely divert the runaway trolley onto the sidetrack. However, one person is tied to the branch line. That person is your significant other (if you do not have one, imagine that you do). If the direction of the train is changed, that person will die.<br><br>Would you pull the lever, killing your loved one? Or would you do nothing and leave the five strangers to die?",
     type: "multiple-choice",
     options: [
     "I absolutely would pull it.",
     "I would pull it.",
     "If anything, I think I would pull it.",
-    "I am not sure what I would do.",
+    "I am not sure what I would do. I might freeze and be unable to react.",
     "If anything, I think I would not pull it.",
     "I would not pull it.",
     "I absolutely would not pull it."
@@ -18,7 +18,7 @@ const questions = [
     category: "c",
   },
   {
-    question: "2. You and a close friend have been arrested for a crime you both committed. You are being held in separate cells with no means of communication. The prosecutor offers you a deal.<br><br>Option 1: If both you and your friend choose to remain silent (Ally), you'll each get a one-year sentence for a lesser charge.<br><br>Option 2: If you betray your friend (Betray) while your friend remains silent, you'll go free, but your friend will get a three-year sentence. If your friend betrays you while you remain silent, the situation is reversed.<br><br>If both of you betray each other, you both get a two-year sentence.<br><br>Select the choice that best represents what you would do in this situation.",
+    question: "2. You and your closest friend have been arrested for a crime you both committed. You are being held in separate cells with no means of communication. The prosecutor offers you a deal.<br><br>Option 1: If both you and your friend choose to remain silent (Ally), you'll each get a one-year sentence for a lesser charge.<br><br>Option 2: If you betray your friend (Betray) while your friend remains silent, you'll go free, but your friend will get a three-year sentence. If your friend betrays you while you remain silent, the situation is reversed.<br><br>If both of you betray each other, you both get a two-year sentence.<br><br>You do not know what your friend will choose. What would you choose to do in this situation?",
     type: "multiple-choice",
     options: [
     "I absolutely would pick Ally.",
@@ -32,7 +32,7 @@ const questions = [
     category: "a",
   },
   {
-    question: "3. You learn that you live in a simulation where it is permanently the year 1999. You are offered two options.<br><br>Option 1: Exit the simulation to the real world.<br><br>Option 2: Forget you ever learned this and keep living on in this rather stable environment.<br><br>You do not know what the outside world is like.<br><br>What would you choose to do?",
+    question: "3. You learn that you live in a simulation where it is permanently the year 1999. One day, a man in a coat walks up to you and offers you two options.<br><br>Option 1: Exit the simulation to the real world.<br><br>Option 2: Forget that you ever learned this and keep living on in this rather stable environment.<br><br>You do not know what the outside world is like. You also do not know if you will ever learn this information again if you choose to forget it.<br><br>What would you choose to do?",
     type: "multiple-choice",
     options: [
     "I absolutely would leave the simulation.",
@@ -46,7 +46,7 @@ const questions = [
     category: "o",
   },
   {
-    question: "4. You have to execute one of these people based on these descriptions. Who do you choose?",
+    question: "4. You have to execute one of the following people based on these descriptions. Who do you choose?",
     type: "multiple-choice",
     options: [
     "Person 1: Donates a few thousand dollars to charity every year. Once robbed a Burger King.",
@@ -58,7 +58,7 @@ const questions = [
     category: "x",
   },
   {
-    question: "5. You are selected as part of a time-travel experiment to be sent back to the year 1979. You can't come back to the present. You will be provided with $50,000 in cash and an identity. In addition, you can select one of the following things to bring with you. What would you bring?",
+    question: "5. The year is 2030. You are a scientist working in a lab, and you have been selected as part of a time-travel experiment to be sent back to the year 1979. You can't come back to the present. You will be provided with $50,000 in cash and an identity. In addition, you can select one of the following things to bring with you. What would you bring?",
     type: "multiple-choice",
     options: [
     "The deed to an estate with a mansion, located in any country of your choice.",
@@ -70,14 +70,14 @@ const questions = [
     category: "x",
   },
   {
-    question: "6. You fall asleep one night and find yourself waking up in an alternate universe, where you are a student attending a magic academy. The technology level here is similar to 2024 Earth.<br><br>Which of the following magic spells would you choose to have?",
+    question: "6. You fall asleep one night and find yourself waking up in an alternate universe, where you are a first-year student attending a magic academy. The technology level here is similar to 2024 Earth.<br><br>Which of the following magic spells would you choose to have?",
     type: "multiple-choice",
     options: [
     "Unleash the Beast - Transform into a wolf, gaining enhanced speed, strength, and senses.",
     "Snake Whisperer - Hypnotize your target into doing your bidding.",
     "Split Card - Create temporary clones of yourself.",
     "It's a Deal - Take any power from another person once they sign a magical contract with you.",
-    "Fae Of Maleficence - Place a large area within time stasis. Everyone within that area will be put to sleep.",
+    "Fae of Maleficence - Place a large area within time stasis. Everyone within that area will be put to sleep.",
     ],
     category: "x",
   },
@@ -110,38 +110,38 @@ const questions = [
     category: "es",
   },
   {
-    question: "9. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>In the enchanted forest, you come across a group of talking creatures having a lively celebration. They invite you to join them. How do you respond?",
+    question: "9. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact - a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>In the enchanted forest, you come across a group of talking creatures having a lively celebration. They invite you to join them. How do you respond?",
     type: "multiple-choice",
     options: [
-      "1 - I enthusiastically join the celebration, eager to interact with the creatures and make new friends.",
+      "1 - I enthusiastically join the celebration, eager to interact with the creatures, tell stories of my adventures, and make new allies.",
       "2",
       "3",
-      "4 - I cautiously observe the celebration but may not actively participate unless approached.",
+      "4 - I stay for a while to observe the celebration but may not actively participate unless approached.",
       "5",
       "6",
-      "7 - I politely decline and prefer to continue the quest without getting too involved in the festivities."
+      "7 - I would decline the offer and continue the quest without getting involved in the festivities."
     ],
     category: "e",
   },
   {
-    question: "10. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>On your journey, you encounter a fellow traveler who is struggling with a difficult puzzle. How do you assist them?",
+    question: "10. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact - a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>On your journey, you encounter a fellow traveler who is struggling with a difficult mechanical puzzle. How do you assist them?",
     type: "multiple-choice",
     options: [
-      "1 - I eagerly offer my help, patiently explaining the puzzle and working together to solve it.",
+      "1 - I eagerly offer my help, patiently explaining the puzzle and working together with them to solve it.",
       "2",
       "3",
       "4 - I would provide some assistance or advice, but would also be careful not to get too sidetracked.",
       "5",
       "6",
-      "7 - I would not offer any advice and would prioritize completing the quest rather than spending any time helping."
+      "7 - I would not offer them any advice and would prioritize completing the quest rather than spending any time helping."
     ],
     category: "a",
   },
   {
-    question: "11. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>You receive a magical tome with information about events yet to come. How do you approach using the tome?",
+    question: "11. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact - a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>You receive a magical tome with information about events yet to come. How do you approach using the tome?",
     type: "multiple-choice",
     options: [
-      "1 - I carefully study the tome, create an extensive plan that takes into account the future events precisely, and ensure every step aligns with this plan.",
+      "1 - I carefully study the tome, create an extensive plan that takes into account the future events precisely, and ensure every step aligns with this new plan.",
       "2",
       "3",
       "4 - While I consider the tome's information, I might also trust my instincts and be skeptical of its contents, being prepared to alter the plan as needed.",
@@ -152,7 +152,7 @@ const questions = [
     category: "c",
   },
   {
-    question: "12. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>During the quest, your party encounters a ferocious monster that engages you in battle. As a psychological attack, you are suddenly assaulted by visions of your worst fears. How do you handle this situation?",
+    question: "12. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact - a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>During the quest, your party encounters a ferocious monster that engages you in battle. As a psychological attack, you are suddenly assaulted by visions of your worst fears. How do you handle this situation?",
     type: "multiple-choice",
     options: [
       "1 - I take a deep breath, acknowledge my fear, and courageously deflect the attacks, determined to overcome this enemy.",
@@ -166,16 +166,16 @@ const questions = [
     category: "es",
   },
   {
-    question: "13. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact that can save the kingdom from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and encountering mystical creatures.<br><br>In a mysterious cavern, you discover an ancient book containing powerful spells. How do you react to this newfound knowledge?",
+    question: "13. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact - a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>As a dungeon clear reward, you receive an ancient manuscript containing powerful spells. How do you react to this newfound knowledge?",
     type: "multiple-choice",
     options: [
       "1 - I am excited to explore the potential of the spells, eager to learn and experiment with the magical abilities.",
       "2",
       "3",
-      "4 - While intrigued, I approach the book with caution, considering the potential consequences of using the spells.",
+      "4 - While intrigued, I approach the manuscript with caution, considering the potential consequences of using the spells.",
       "5",
       "6",
-      "7 - I might be hesitant to delve into the magical world, preferring to stick to the original quest without exploring new possibilities."
+      "7 - I might be hesitant to delve into the magical world, keeping the manuscript for future use but not prioritizing it at the moment."
     ],
     category: "o",
   },
@@ -186,10 +186,10 @@ const questions = [
       "1 - I am likely to take charge, express my opinions confidently, and actively participate in the discussion.",
       "2",
       "3",
-      "4 - I prefer to contribute when necessary but may stay reserved if others are more vocal.",
+      "4 - I would contribute when necessary but may stay reserved if others are more vocal.",
       "5",
       "6",
-      "7 - I am more comfortable listening to others and may not actively engage in the discussion unless required."
+      "7 - I am comfortable listening to others and would not actively engage in the discussion unless required."
     ],
     category: "e",
   },
