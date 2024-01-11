@@ -67,7 +67,7 @@ const questions = [
     "A library of microfilm reels containing a vast amount of scientific and medical research papers and literature from the 21st century.",
     "A new computer with a collection of video games and software on it, and detailed schematics for its construction.",
     "An electronic tablet containing an offline copy of Wikipedia from 2030.",
-    "A collection of valuable art pieces, sculptures, and paintings that were created after 1980.",
+    "An extensive library of music from various genres created after 1980, stored on vinyl records and cassette tapes.",
     "A bookshelf full of best-selling novels that were published after 1980, including the entire Harry Potter series.",
     "The deed to an estate with a mansion, located in any country of your choice.",
     ],
@@ -402,10 +402,31 @@ function showResult() {
       <p>Similarity Score: <strong>${similarityScore.toFixed(2)}</strong></p>
       <p>${additionalInfo}</p>
       <img src="${imagePath}" alt="${userResult.archetype} Image"> <!-- Display the archetype-specific image -->
+      <button onclick="showShare()" id="showShareBtn">Share Result</button>
       <button onclick="showAnalysis()" id="showAnalysisBtn">Show Analysis</button>
+      <button onclick="showSecondary()" id="showSecondaryBtn">Show Secondary Type</button>
       <button onclick="showDebug()" id="showDebugBtn">Show Debug</button>
     </div>
   `;
+}
+
+function showShare() {
+  const shareContainer = document.getElementById('share');
+  const userResult = calculateResult();
+
+  if (!shareContainer) {
+    const newShareContainer = document.createElement('div');
+    newShareContainer.id = 'share';
+    newShareContainer.innerHTML = `
+      <p>My TCAL Personality Test result is **${userResult.archetype}** with a similarity score of ${userResult.similarityScore.toFixed(2)}. https://llamawa.re/TCAL-Personality/test.html</p>
+    `;
+    document.getElementById('quiz-content').appendChild(newShareContainer);
+  }
+  // Disable the button after it's clicked
+  const showShareBtn = document.getElementById('showShareBtn');
+  if (showShareBtn) {
+    showShareBtn.disabled = true;
+  }
 }
 
 function showAnalysis() {
@@ -416,32 +437,61 @@ function showAnalysis() {
     const newAnalysisContainer = document.createElement('div');
     newAnalysisContainer.id = 'analysis';
 
+    let additionalInfo = "";
+
     // Add conditional statements for different archetypes
     if (userResult.archetype === "Mrs. Graves") {
-      newAnalysisContainer.innerHTML = "[No data]";
+      additionalInfo = "[No data]";
     } else if (userResult.archetype === "Ashley Graves") {
-      newAnalysisContainer.innerHTML = "[No data]";
+      additionalInfo = "[No data]";
     } else if (userResult.archetype === "The Lady") {
-      newAnalysisContainer.innerHTML = "[No data]";
+      additionalInfo = "[No data]";
     } else if (userResult.archetype === "Nina") {
-      newAnalysisContainer.innerHTML = "[No data]";
+      additionalInfo = "[No data]";
     } else if (userResult.archetype === "Andrew Graves") {
-      newAnalysisContainer.innerHTML = "[No data]";
+      additionalInfo = "[No data]";
     } else if (userResult.archetype === "Cult Leader") {
-      newAnalysisContainer.innerHTML = "[No data]";
+      additionalInfo = "[No data]";
     } else if (userResult.archetype === "Julia") {
-      newAnalysisContainer.innerHTML = "[No data]";
+      additionalInfo = "[No data]";
     } else if (userResult.archetype === "???") {
-      newAnalysisContainer.innerHTML = "[No data]";
+      additionalInfo = "[No data]";
     } else if (userResult.archetype === "Mr. Graves") {
-      newAnalysisContainer.innerHTML = "[No data]";
+      additionalInfo = "[No data]";
     }
+
+    newAnalysisContainer.innerHTML = `
+	  <h3>Analysis</h3>
+      <p>${additionalInfo}</p>
+    `;
+
     document.getElementById('quiz-content').appendChild(newAnalysisContainer);
   }
   // Disable the button after it's clicked
   const showAnalysisBtn = document.getElementById('showAnalysisBtn');
   if (showAnalysisBtn) {
     showAnalysisBtn.disabled = true;
+  }
+}
+
+function showSecondary() {
+  const secondaryContainer = document.getElementById('secondary');
+  const userResult = calculateResult();
+
+  if (!secondaryContainer) {
+    const newSecondaryContainer = document.createElement('div');
+    newSecondaryContainer.id = 'secondary';
+    newSecondaryContainer.innerHTML = `
+	  <h3>Secondary Type</h3>
+      <p>Not satisfied with your result? According to our calculations, it may be possible that you are: <strong>${userResult.secondaryArchetype}</strong></p>
+      <p>Similarity Score: <strong>${userResult.secondarySimilarityScore.toFixed(2)}</strong></p>
+    `;
+    document.getElementById('quiz-content').appendChild(newSecondaryContainer);
+  }
+  // Disable the button after it's clicked
+  const showSecondaryBtn = document.getElementById('showSecondaryBtn');
+  if (showSecondaryBtn) {
+    showSecondaryBtn.disabled = true;
   }
 }
 
@@ -461,7 +511,7 @@ function showDebug() {
     }
 
     newDebugContainer.innerHTML = `
-      <h3>Debug - User Answers:</h3>
+      <h3>Debug Info</h3>
       ${Object.keys(answers).map(category => `
         <h4>${category}: ${averageScores[category]}</h4>
         <ul>
@@ -502,13 +552,17 @@ function calculateResult() {
     const average = values.reduce((sum, value) => sum + value, 0) / values.length;
     typeAverages[category] = average;
 
-    // Calculate the maximum possible difference for this category (assuming user answers are at extremes)
-    totalPossibleDifference += Math.max(...values) - Math.min(...values);
+    // Calculate the maximum possible difference for this category (considering the full range of possible answers)
+    totalPossibleDifference += 6;
   }
 
   // Find the archetype with the closest similarity score
   let minDifference = Number.MAX_SAFE_INTEGER;
   let closestArchetype = null;
+
+  // For secondary archetype
+  let secondMinDifference = Number.MAX_SAFE_INTEGER;
+  let secondClosestArchetype = null;
 
   for (const archetype in archetypeScores) {
     const archetypeScore = archetypeScores[archetype];
@@ -520,16 +574,25 @@ function calculateResult() {
       difference += Math.abs(userAverage - archetypeScore[category]);
     }
 
-    // Update the closest archetype if the current difference is smaller
+    // Update the closest and secondary archetypes if the current difference is smaller
     if (difference < minDifference) {
+      secondMinDifference = minDifference; // Move the current closest difference to the secondary
+      secondClosestArchetype = closestArchetype;
+
       minDifference = difference;
       closestArchetype = archetype;
+    } else if (difference < secondMinDifference) {
+      secondMinDifference = difference;
+      secondClosestArchetype = archetype;
     }
   }
-  // Return the archetype and total possible difference as an object
+
+  // Return both the primary and secondary archetypes and similarity scores as an object
   return {
     archetype: closestArchetype,
     similarityScore: 1 - minDifference / totalPossibleDifference,
+    secondaryArchetype: secondClosestArchetype,
+    secondarySimilarityScore: 1 - secondMinDifference / totalPossibleDifference,
   };
 }
 
