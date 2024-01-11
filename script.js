@@ -387,7 +387,7 @@ function showResult() {
   } else if (userResult.archetype === "Julia") {
     additionalInfo = "Enthusiastic &#9679; Curious &#9679; Outgoing &#9679; Optimistic &#9679; Spontaneous<br><br>Motivation: To be satisfied and content - to have their needs fulfilled<br><br>Dislikes limitations and routines, attracted to new possibilities and excitement.";
     imagePath = "img/julia.png";
-  } else if (userResult.archetype === "???") {
+  } else if (userResult.archetype === "??? (Entity)") {
     additionalInfo = "Confident &#9679; Independent &#9679; Energetic &#9679; Headstrong &#9679; Natural Leader<br><br>Motivation: To protect themselves (to be in control of their own life and destiny)<br><br>Dislikes indecisiveness and indirectness, attracted to strength and strategic action.";
     imagePath = "img/entity.png";
   } else if (userResult.archetype === "Mr. Graves") {
@@ -454,7 +454,7 @@ function showAnalysis() {
       additionalInfo = "[No data]";
     } else if (userResult.archetype === "Julia") {
       additionalInfo = "[No data]";
-    } else if (userResult.archetype === "???") {
+    } else if (userResult.archetype === "??? (Entity)") {
       additionalInfo = "[No data]";
     } else if (userResult.archetype === "Mr. Graves") {
       additionalInfo = "[No data]";
@@ -539,7 +539,7 @@ function calculateResult() {
     "Andrew Graves": { e: 1, es: 4, a: 1 , o: 5.5, c: 4, x: 4, },
     "Cult Leader": { e: 4, es: 2.5, a: 4 , o: 1, c: 4, x: 5.5, },
     "Julia": { e: 7, es: 5.5, a: 4 , o: 5.5, c: 2.5, x: 3.5, },
-    "???": { e: 7, es: 7, a: 2.5 , o: 5.5, c: 5.5, x: 6, },
+    "??? (Entity)": { e: 7, es: 7, a: 2.5 , o: 5.5, c: 5.5, x: 6, },
     "Mr. Graves": { e: 2.5, es: 5.5, a: 5.5 , o: 1, c: 2.5, x: 2, },
   };
 
