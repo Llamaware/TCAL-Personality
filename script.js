@@ -7,15 +7,15 @@ const questions = [
     question: "1. You are standing on the side of a railroad. A runaway train with broken brakes is rushing in your direction, and you see five people tied to the tracks. If you do nothing, the five people will be run over by the train and shall die. Fortunately, there is a lever on your side. If you pull it, you can surely divert the runaway trolley onto the sidetrack. However, one person is tied to the branch line. That person is your significant other (if you do not have one, imagine that you do). If the direction of the train is changed, that person will die.<br><br>Would you pull the lever, killing your loved one? Or would you do nothing and leave the five strangers to die?",
     type: "multiple-choice",
     options: [
-    "I absolutely would pull it.",
-    "I would pull it.",
-    "If anything, I think I would pull it.",
-    "I am not sure what I would do. I might freeze and be unable to react.",
-    "If anything, I think I would not pull it.",
+    "I absolutely would not pull it.",
     "I would not pull it.",
-    "I absolutely would not pull it."
+    "If anything, I think I would not pull it.",
+    "I am not sure what I would do. I might freeze and be unable to react.",
+    "If anything, I think I would pull it.",
+    "I would pull it.",
+    "I absolutely would pull it."
     ],
-    category: "c",
+    category: "x",
   },
   {
     question: "2. You and your closest friend have been arrested for a crime you both committed. You are being held in separate cells with no means of communication. The prosecutor offers you a deal.<br><br>Option 1: If both you and your friend choose to remain silent (Ally), you'll each get a one-year sentence for a lesser charge.<br><br>Option 2: If you betray your friend (Betray) while your friend remains silent, you'll go free, but your friend will get a three-year sentence. If your friend betrays you while you remain silent, the situation is reversed.<br><br>If both of you betray each other, you both get a two-year sentence.<br><br>You do not know what your friend will choose. What would you choose to do in this situation?",
@@ -49,11 +49,13 @@ const questions = [
     question: "4. You have to execute one of the following people based on these descriptions. Who do you choose?",
     type: "multiple-choice",
     options: [
-    "Person 1: Donates a few thousand dollars to charity every year. Once robbed a Burger King.",
-    "Person 2: Will develop a vaccine for HIV by next year. Has a woman trapped in his basement against her will.",
-    "Person 3: Runs a no kill animal shelter. Beats her children.",
-    "Person 4: Is a 2 month old baby. Has a 1% chance of causing World War 3.",
-    "Person 5: Makes free food for the homeless. Constantly thinks about cannibalizing someone.",
+    "Person 1: An engineer who donates a few thousand dollars to charity every year. Once robbed a Burger King.",
+    "Person 2: A former serial killer, successfully reintegrated into society after spending ten years in a psychiatric institution. Currently works in a post office.",
+    "Person 3: A researcher who will develop a vaccine for HIV by next year. Has a woman trapped in his basement against her will.",
+    "Person 4: Is a 2 month old baby. Has a 0.01% chance of causing World War 3.",
+    "Person 5: Runs a no kill animal shelter. Beats her children.",
+    "Person 6: A social worker who makes free food for the homeless. Is depressed and suicidal, with several suicide attempts in the past.",
+    "Person 7: A computer programmer and true crime enthusiast. Has plans to murder someone three months from now, just to see what it's like.",
     ],
     category: "x",
   },
@@ -61,13 +63,15 @@ const questions = [
     question: "5. The year is 2030. You are a scientist working in a lab, and you have been selected as part of a time-travel experiment to be sent back to the year 1979. You can't come back to the present. You will be provided with $50,000 in cash and an identity. In addition, you can select one of the following things to bring with you. What would you bring?",
     type: "multiple-choice",
     options: [
-    "The deed to an estate with a mansion, located in any country of your choice.",
+    "A collection of modern medications and vaccines, with directions for their synthesis using methods available to pharmaceutical companies in 1979.",
+    "A library of microfilm reels containing a vast amount of scientific and medical research papers and literature from the 21st century.",
     "A new computer with a collection of video games and software on it, and detailed schematics for its construction.",
-    "An electronic tablet containing an offline copy of Wikipedia from 2024.",
-    "A collection of modern medications and vaccines, with directions for their synthesis.",
+    "An electronic tablet containing an offline copy of Wikipedia from 2030.",
+    "A collection of valuable art pieces, sculptures, and paintings that were created after 1980.",
     "A bookshelf full of best-selling novels that were published after 1980, including the entire Harry Potter series.",
+    "The deed to an estate with a mansion, located in any country of your choice.",
     ],
-    category: "x",
+    category: "c",
   },
   {
     question: "6. You fall asleep one night and find yourself waking up in an alternate universe, where you are a first-year student attending a magic academy. The technology level here is similar to 2024 Earth.<br><br>Which of the following magic spells would you choose to have?",
@@ -75,9 +79,11 @@ const questions = [
     options: [
     "Unleash the Beast - Transform into a wolf, gaining enhanced speed, strength, and senses.",
     "Snake Whisperer - Hypnotize your target into doing your bidding.",
-    "Split Card - Create temporary clones of yourself.",
+    "Shock the Heart - Compel your target to speak the truth.",
     "It's a Deal - Take any power from another person once they sign a magical contract with you.",
+    "Split Card - Create temporary clones of yourself.",
     "Fae of Maleficence - Place a large area within time stasis. Everyone within that area will be put to sleep.",
+    "Bet the Limit - Reflect an opponent's attack back to them with double the power.",
     ],
     category: "x",
   },
@@ -274,7 +280,7 @@ function showQuestion() {
         <label for="${option}">${option}</label><br>
       `).join('')}
       <button onclick="nextQuestion()">Next</button>
-	  <div id="feedbackText"></div>
+      <div id="feedbackText"></div>
     `;
   } else if (current.type === "checkbox") {
     questionElement.innerHTML = `
@@ -284,7 +290,7 @@ function showQuestion() {
         <label for="${option}">${option}</label><br>
       `).join('')}
       <button onclick="nextQuestion()">Next</button>
-	  <div id="feedbackText"></div>
+      <div id="feedbackText"></div>
     `;
   } else if (current.type === "slider") {
     questionElement.innerHTML = `
@@ -295,7 +301,7 @@ function showQuestion() {
         <span>${current.labels[1]}</span>
       </div>
       <button onclick="nextQuestion()">Next</button>
-	  <div id="feedbackText"></div>
+      <div id="feedbackText"></div>
     `;
 
     const slider = questionElement.querySelector('#sliderValue');
@@ -409,7 +415,7 @@ function showAnalysis() {
   if (!analysisContainer) {
     const newAnalysisContainer = document.createElement('div');
     newAnalysisContainer.id = 'analysis';
-    
+
     // Add conditional statements for different archetypes
     if (userResult.archetype === "Mrs. Graves") {
       newAnalysisContainer.innerHTML = "[No data]";
@@ -476,15 +482,15 @@ function showDebug() {
 
 function calculateResult() {
   const archetypeScores = {
-    "Mrs. Graves": { e: 2.5, es: 2.5, a: 4 , o: 2.5, c: 7, x: 4, },
-    "Ashley Graves": { e: 5.5, es: 4, a: 5.5 , o: 4, c: 4, x: 5.5, },
-    "The Lady": { e: 5.5, es: 4, a: 4 , o: 4, c: 4, x: 6, },
-    "Nina": { e: 4, es: 2.5, a: 4 , o: 5.5, c: 4, x: 3.5, },
-    "Andrew Graves": { e: 1, es: 4, a: 1 , o: 5.5, c: 4, x: 5, },
-    "Cult Leader": { e: 4, es: 2.5, a: 4 , o: 1, c: 4, x: 6.5, },
-    "Julia": { e: 7, es: 5.5, a: 4 , o: 5.5, c: 2.5, x: 4.5, },
-    "???": { e: 7, es: 7, a: 2.5 , o: 5.5, c: 5.5, x: 7, },
-    "Mr. Graves": { e: 2.5, es: 5.5, a: 5.5 , o: 1, c: 2.5, x: 3, },
+    "Mrs. Graves": { e: 2.5, es: 2.5, a: 4 , o: 2.5, c: 7, x: 3, },
+    "Ashley Graves": { e: 5.5, es: 4, a: 5.5 , o: 4, c: 4, x: 4.5, },
+    "The Lady": { e: 5.5, es: 4, a: 4 , o: 4, c: 4, x: 5, },
+    "Nina": { e: 4, es: 2.5, a: 4 , o: 5.5, c: 4, x: 2.5, },
+    "Andrew Graves": { e: 1, es: 4, a: 1 , o: 5.5, c: 4, x: 4, },
+    "Cult Leader": { e: 4, es: 2.5, a: 4 , o: 1, c: 4, x: 5.5, },
+    "Julia": { e: 7, es: 5.5, a: 4 , o: 5.5, c: 2.5, x: 3.5, },
+    "???": { e: 7, es: 7, a: 2.5 , o: 5.5, c: 5.5, x: 6, },
+    "Mr. Graves": { e: 2.5, es: 5.5, a: 5.5 , o: 1, c: 2.5, x: 2, },
   };
 
   const typeAverages = {};
