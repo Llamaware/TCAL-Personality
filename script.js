@@ -399,7 +399,7 @@ function showResult() {
     <div id="result">
       <h2>Your Character Type</h2>
       <p>Based on your answers, you are: <strong>${userResult.archetype}</strong></p>
-      <p>Similarity Score: <strong>${similarityScore.toFixed(2)}</strong></p>
+      <p>Similarity Score: <strong>${similarityScore.toFixed(3)}</strong></p>
       <p>${additionalInfo}</p>
       <img src="${imagePath}" alt="${userResult.archetype} Image"> <!-- Display the archetype-specific image -->
       <button onclick="showShare()" id="showShareBtn">Share Result</button>
@@ -418,7 +418,7 @@ function showShare() {
     const newShareContainer = document.createElement('div');
     newShareContainer.id = 'share';
     newShareContainer.innerHTML = `
-      <p>My TCAL Personality Test result is **${userResult.archetype}** with a similarity score of ${userResult.similarityScore.toFixed(2)}. https://llamawa.re/TCAL-Personality/test.html</p>
+      <p>My TCAL Personality Test result is **${userResult.archetype}** with a similarity score of ${userResult.similarityScore.toFixed(3)}. https://llamawa.re/TCAL-Personality/test.html</p>
     `;
     document.getElementById('quiz-content').appendChild(newShareContainer);
   }
@@ -484,7 +484,7 @@ function showSecondary() {
     newSecondaryContainer.innerHTML = `
 	  <h3>Secondary Type</h3>
       <p>Not satisfied with your result? According to our calculations, it may be possible that you are: <strong>${userResult.secondaryArchetype}</strong></p>
-      <p>Similarity Score: <strong>${userResult.secondarySimilarityScore.toFixed(2)}</strong></p>
+      <p>Similarity Score: <strong>${userResult.secondarySimilarityScore.toFixed(3)}</strong></p>
     `;
     document.getElementById('quiz-content').appendChild(newSecondaryContainer);
   }
@@ -506,7 +506,7 @@ function showDebug() {
     const averageScores = {};
     for (const category in answers) {
       const values = answers[category];
-      const average = (values.reduce((sum, value) => sum + value, 0) / values.length).toFixed(2); // Truncate to 2 decimal places
+      const average = (values.reduce((sum, value) => sum + value, 0) / values.length).toFixed(3); // Truncate to 3 decimal places
       averageScores[category] = average;
     }
 
