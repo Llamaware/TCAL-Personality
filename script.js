@@ -442,7 +442,7 @@ function showAnalysis() {
 
     // Add conditional statements for different archetypes
     if (userResult.archetype === "Mrs. Graves") {
-      motivation = `To be good, to have integrity, to be in balance with everything<br><br><em>Dislikes sloppiness and error, attracted to order and high standards for self and others.</em>`;
+      motivation = `To be good, to have integrity, to be in balance with everything.<br><br><em>Dislikes sloppiness and error, attracted to order and high standards for self and others.</em>`;
 
       additionalInfo = `You are <strong>Mrs. Graves</strong>, the Reformer. You have a "sense of mission" that leads you to want to improve the world in various ways, using whatever degree of influence you have. You strive to overcome adversity - particularly moral adversity - so that the human spirit can shine through and make a difference. You strive after "higher values", even at the cost of great personal sacrifice.<br><br>
       You are a person of practical action - you wish to be useful in the best sense of the word. On some level of consciousness, you feel that you "have a mission" to fulfill in life, if only to try your best to reduce the disorder you see in your environment.<br><br>
