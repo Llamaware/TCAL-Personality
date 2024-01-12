@@ -111,7 +111,7 @@ const questions = [
       "4 - I would miss my old life, but I would also look forward to having new friends and family in this world. I might seek out the people from my previous life, hoping that they have also reincarnated here.",
       "5",
       "6",
-      "7 - I would not adjust well at all to life in this new world. I might become depressed, and in the worst case, I would not be able to function at all."
+      "7 - I would not adjust well at all to life in this new world. I might become depressed, and in the worst case, I would not be able to function at all.",
     ],
     category: "es",
   },
@@ -125,7 +125,7 @@ const questions = [
       "4 - I stay for a while to observe the celebration but may not actively participate unless approached.",
       "5",
       "6",
-      "7 - I would decline the offer and continue the quest without getting involved in the festivities."
+      "7 - I would decline the offer and continue the quest without getting involved in the festivities.",
     ],
     category: "e",
   },
@@ -139,7 +139,7 @@ const questions = [
       "4 - I would provide some assistance or advice, but would also be careful not to get too sidetracked.",
       "5",
       "6",
-      "7 - I would not offer them any advice and would prioritize completing the quest rather than spending any time helping."
+      "7 - I would not offer them any advice and would prioritize completing the quest rather than spending any time helping.",
     ],
     category: "a",
   },
@@ -153,7 +153,7 @@ const questions = [
       "4 - While I consider the tome's information, I might also trust my instincts and be skeptical of its contents, being prepared to alter the plan as needed.",
       "5",
       "6",
-      "7 - I might not use the information at all and prefer to explore the kingdom freely, trusting my intuition and the original plan."
+      "7 - I might not use the information at all and prefer to explore the kingdom freely, trusting my intuition and the original plan.",
     ],
     category: "c",
   },
@@ -167,7 +167,7 @@ const questions = [
       "4 - I might feel anxious but would continue the battle, knowing that my allies have my back.",
       "5",
       "6",
-      "7 - I could be paralyzed by fear, finding it challenging to continue the quest and considering fleeing from the fight."
+      "7 - I could be paralyzed by fear, finding it challenging to continue the quest and considering fleeing from the fight.",
     ],
     category: "es",
   },
@@ -181,7 +181,7 @@ const questions = [
       "4 - While intrigued, I approach the manuscript with caution, considering the potential consequences of using the spells.",
       "5",
       "6",
-      "7 - I might be hesitant to delve into the magical world, keeping the manuscript for future use but not prioritizing it at the moment."
+      "7 - I might be hesitant to delve into the magical world, keeping the manuscript for future use but not prioritizing it at the moment.",
     ],
     category: "o",
   },
@@ -195,7 +195,7 @@ const questions = [
       "4 - I would contribute when necessary but may stay reserved if others are more vocal.",
       "5",
       "6",
-      "7 - I am comfortable listening to others and would not actively engage in the discussion unless required."
+      "7 - I am comfortable listening to others and would not actively engage in the discussion unless required.",
     ],
     category: "e",
   },
@@ -209,7 +209,7 @@ const questions = [
       "4 - I might express my opinion calmly but avoid getting involved in the argument.",
       "5",
       "6",
-      "7 - I would let the jurors resolve the disagreement on their own, as long as it doesn't disrupt the process."
+      "7 - I would let the jurors resolve the disagreement on their own, as long as it doesn't disrupt the process.",
     ],
     category: "a",
   },
@@ -223,7 +223,7 @@ const questions = [
       "4 - I would consider the instructions but may also rely on my instincts and personal judgment.",
       "5",
       "6",
-      "7 - I might find the instructions too restrictive and prefer to trust my intuition in reaching a decision."
+      "7 - I might find the instructions too restrictive and prefer to trust my intuition in reaching a decision.",
     ],
     category: "c",
   },
@@ -237,7 +237,7 @@ const questions = [
       "4 - I might feel some sympathy but would try to remain focused on the facts and evidence.",
       "5",
       "6",
-      "7 - I could be deeply moved by the emotional plea and find it challenging to separate emotions from the decision-making process."
+      "7 - I could be deeply moved by the emotional plea and find it challenging to separate emotions from the decision-making process.",
     ],
     category: "es",
   },
@@ -251,7 +251,7 @@ const questions = [
       "4 - While intrigued, I might be cautious about accepting the new evidence and would reevaluate it thoroughly.",
       "5",
       "6",
-      "7 - I could be resistant to changing my initial opinions, preferring to stick with my original stance."
+      "7 - I could be resistant to changing my initial opinions, preferring to stick with my original stance.",
     ],
     category: "o",
   }
@@ -367,31 +367,31 @@ function showResult() {
 
   // Add conditional statements for different archetypes
   if (userResult.archetype === "Mrs. Graves") {
-    additionalInfo = "Responsible &#9679; Practical &#9679; Hardworking &#9679; Loyal &#9679; Detail Oriented<br><br>Motivation: To be good, to have integrity, to be in balance with everything<br><br>Dislikes sloppiness and error, attracted to order and high standards for self and others.";
+    additionalInfo = "Responsible &#9679; Practical &#9679; Hardworking &#9679; Loyal &#9679; Detail Oriented";
     imagePath = "img/mrs_graves.png";
   } else if (userResult.archetype === "Ashley Graves") {
-    additionalInfo = "Helpful &#9679; Nurturing &#9679; Warm &#9679; Approachable &#9679; Patient<br><br>Motivation: To be loved unconditionally<br><br>Dislikes solitude and impersonal dealings, attracted to service and making personal connections.";
+    additionalInfo = "Helpful &#9679; Nurturing &#9679; Warm &#9679; Approachable &#9679; Patient";
     imagePath = "img/ashley.png";
   } else if (userResult.archetype === "The Lady") {
-    additionalInfo = "Confident &#9679; Ambitious &#9679; Self-conscious &#9679; Productive &#9679; Energetic<br><br>Motivation: To feel valuable and worthwhile (not to disappoint others)";
+    additionalInfo = "Confident &#9679; Ambitious &#9679; Self-conscious &#9679; Productive &#9679; Energetic";
     imagePath = "img/lady.png";
   } else if (userResult.archetype === "Nina") {
-    additionalInfo = "Creative &#9679; Emotional &#9679; Open &#9679; Offbeat &#9679; Introspective<br><br>Motivation: To find themselves and their significance (to create an identity out of their inner experience)<br><br>Dislikes uniformity and regulation, attracted to creativity and putting their personal mark on things.";
+    additionalInfo = "Creative &#9679; Emotional &#9679; Open &#9679; Offbeat &#9679; Introspective";
     imagePath = "img/nina.png";
   } else if (userResult.archetype === "Andrew Graves") {
-    additionalInfo = "Self-sufficient &#9679; Insightful &#9679; Withdrawn &#9679; Analytical &#9679; Introverted<br><br>Motivation: To be capable and competent (to have something to contribute)<br><br>Dislikes intrusions on their time and space, attracted to depth and learning.";
+    additionalInfo = "Self-sufficient &#9679; Insightful &#9679; Withdrawn &#9679; Analytical &#9679; Introverted";
     imagePath = "img/andrew.png";
   } else if (userResult.archetype === "Cult Leader") {
-    additionalInfo = "Vigilant &#9679; Organized &#9679; Skeptical &#9679; Trustworthy &#9679; Detail-oriented<br><br>Motivation: To find security and support (to belong somewhere)<br><br>Dislikes unpredictability and rapid change, attracted to clear structures and foresight.";
+    additionalInfo = "Vigilant &#9679; Organized &#9679; Skeptical &#9679; Trustworthy &#9679; Detail-oriented";
     imagePath = "img/cult_leader.png";
   } else if (userResult.archetype === "Julia") {
-    additionalInfo = "Enthusiastic &#9679; Curious &#9679; Outgoing &#9679; Optimistic &#9679; Spontaneous<br><br>Motivation: To be satisfied and content - to have their needs fulfilled<br><br>Dislikes limitations and routines, attracted to new possibilities and excitement.";
+    additionalInfo = "Enthusiastic &#9679; Curious &#9679; Outgoing &#9679; Optimistic &#9679; Spontaneous";
     imagePath = "img/julia.png";
   } else if (userResult.archetype === "??? (Entity)") {
-    additionalInfo = "Confident &#9679; Independent &#9679; Energetic &#9679; Headstrong &#9679; Natural Leader<br><br>Motivation: To protect themselves (to be in control of their own life and destiny)<br><br>Dislikes indecisiveness and indirectness, attracted to strength and strategic action.";
+    additionalInfo = "Confident &#9679; Independent &#9679; Energetic &#9679; Headstrong &#9679; Natural Leader";
     imagePath = "img/entity.png";
   } else if (userResult.archetype === "Mr. Graves") {
-    additionalInfo = "Calm &#9679; Agreeable &#9679; Headstrong &#9679; Humble &#9679; Persuasive<br><br>Motivation: To have inner stability (peace of mind)<br><br>Dislikes tension and conflict, attracted to harmony and stability.";
+    additionalInfo = "Calm &#9679; Agreeable &#9679; Headstrong &#9679; Humble &#9679; Persuasive";
     imagePath = "img/mr_graves.png";
   }
 
@@ -418,7 +418,7 @@ function showShare() {
     const newShareContainer = document.createElement('div');
     newShareContainer.id = 'share';
     newShareContainer.innerHTML = `
-      <p>My TCAL Personality Test result is **${userResult.archetype}** with a similarity score of ${userResult.similarityScore.toFixed(3)}. https://llamawa.re/TCAL-Personality/test.html</p>
+      <p>My TCAL Personality Test result is **${userResult.archetype}** with a similarity score of ${userResult.similarityScore.toFixed(3)}. My secondary type is ${userResult.secondaryArchetype} (${userResult.secondarySimilarityScore.toFixed(3)}). https://llamawa.re/TCAL-Personality/test.html</p>
     `;
     document.getElementById('quiz-content').appendChild(newShareContainer);
   }
@@ -438,31 +438,106 @@ function showAnalysis() {
     newAnalysisContainer.id = 'analysis';
 
     let additionalInfo = "";
+    let motivation = "";
+    let recommendations = "";
 
     // Add conditional statements for different archetypes
     if (userResult.archetype === "Mrs. Graves") {
-      additionalInfo = "[No data]";
+      motivation = `To be good, to have integrity, to be in balance with everything<br><br><em>Dislikes sloppiness and error, attracted to order and high standards for self and others.</em>`;
+
+      additionalInfo = `You are <strong>Mrs. Graves</strong>, the Reformer. You have a "sense of mission" that leads you to want to improve the world in various ways, using whatever degree of influence you have. You strive to overcome adversity - particularly moral adversity - so that the human spirit can shine through and make a difference. You strive after "higher values", even at the cost of great personal sacrifice.<br><br>
+      You are a person of practical action - you wish to be useful in the best sense of the word. On some level of consciousness, you feel that you "have a mission" to fulfill in life, if only to try your best to reduce the disorder you see in your environment.<br><br>
+      In the effort to stay true to their principles, you resist being affected by your instinctual drive, consciously not giving in to it or expressing it too freely. The result is a personality type that has problems with repression, resistance, and aggression. You are usually seen by others as highly self-controlled, even rigid, although this is not how you experience yourself. It seems to you that you are sitting on a cauldron of passions and desires, and you had better "keep the lid on" lest you and everyone else around you regret it.`;
+
+      recommendations = `You have a lot to teach others and are probably a good teacher, but do not expect others to change immediately. What is obvious to you may not be as obvious to them, especially if they are not used to being as self-disciplined and objective about themselves as you are about yourself. Many people may also want to do what is right and may agree with you in principle but for various reasons simply cannot change right away. The fact that others do not change immediately according to your prescriptions does not mean that they will not change sometime in the future. Your words and above all, your example may do more good than you realize, although they may take longer than you expect. So have patience.<br><br>
+      It is easy for you to work yourself up into a lather about the wrongdoings of others. And it may sometimes be true that they are wrong. But what is it to you? Your irritation with them will do nothing to help them see another way of being. Similarly, beware of your constant irritation with your own "shortcomings." Does your own harsh self-criticism really help you to improve? Or does it simply make you tense, nervous, and self-doubting?`;
     } else if (userResult.archetype === "Ashley Graves") {
-      additionalInfo = "[No data]";
+      motivation = `To be loved unconditionally.<br><br><em>Dislikes solitude and impersonal dealings, attracted to service and making personal connections.</em>`;
+
+      additionalInfo = `You are <strong>Ashley Graves</strong>, the Helper. You are generous, empathetic, and demonstrative. You are a people person and you love to support and take care of others. At your best, you are unselfish and altruistic, but when you are less healthy, you can be a people pleaser and overly possessive of those you love. Your deepest desire is to feel loved and your greatest fear is of being unwanted or unworthy of love. This drives you to make yourself indispensable to others.<br><br>
+      Your inner development may be limited by your "shadow side" - pride, self-deception, the tendency to become over-involved in the lives of others, and the tendency to manipulate others to get your own emotional needs met. Transformational work entails going into dark places in ourselves, and this very much goes against the grain of your personality structure, which prefers to see itself in only the most positive, glowing terms.<br><br>
+      As a child, you may have grown up in an environment where you felt like your basic emotional needs were not met. So you learned how to adapt to others’ expectations early on and repress your own desires in an effort to support other people.<br><br>
+      You assume the martyr role in relationships and constantly seek ways to feel important by attending to others' needs. You feel fulfilled when others remind you how grateful they are to have you in their lives, and work hard to maintain this image of the constantly accessible friend. By continuously attending to others’ needs, you may burn out and overcompensate for your energy levels. You may use flattery or compliments in order to gain acceptance and appreciation within a community or relationship. You're hypersensitive to the approval and appraisal of others, especially those you truly care about.`;
+
+      recommendations = `First and foremost, remember that if you are not addressing your own needs, it is highly unlikely that you will be able to meet anyone else's needs without problems, underlying resentments, and continual frustration. Further, you will be less able to respond to people in a balanced way if you have not gotten adequate rest, and taken care of yourself properly. It is not selfish to make sure that you are okay before attending to others' needs - it is simply common sense.<br><br>
+      Try to become more conscious of your own motives when you decide to help someone. While doing good things for people is certainly an admirable trait, when you do so because you expect the other person to appreciate you or do something nice for you in return, you are setting yourself up for disappointments. Your type has a real danger of falling into unconscious codependent patterns with loved ones, and they almost never bring you what you really want.`;
     } else if (userResult.archetype === "The Lady") {
-      additionalInfo = "[No data]";
+      motivation = `To feel valuable and worthwhile (not to disappoint others).`;
+
+      additionalInfo = `You are <strong>The Lady</strong> from Room 302, the Achiever. You want to make sure your life is a success, however that is defined by your family, your culture, and your social sphere. In some families, success means having a lot of money, a grand house, a new, expensive car, and other status symbols. Others value ideas, and success to you means distinguishing yourself in academic or scientific worlds. Success in other circles might mean becoming famous as an actor, or model, or writer, or as a public figure of some kind, perhaps as a politician. A religious family might encourage you to become a minister, priest, or rabbi since these professions have status in their community and in the eyes of the family. No matter how success is defined, you will try to become somebody noteworthy in your family and your community. You will not be a "nobody".<br><br>
+      To this end, you learned to perform in ways that will garner you praise and positive attention. As a child, you learned to recognize the activities that were valued by your parents or peers and put your energies into excelling in those activities. You also learned how to cultivate and develop whatever about you is attractive or potentially impressive.<br><br>
+      The problem is that, in your headlong rush to achieve whatever you believe will make you more valuable, you can become so alienated from yourself that you no longer know what you truly want, or what your real feelings or interests are. In this state, you are easy prey to self-deception, deceit, and falseness of all kinds. Thus, the deeper problem is that your search for a way to be of value increasingly takes you further away from your own Essential Self with its core of real value. From your earliest years, as you become dependent on receiving attention from others and in pursuing the values that others reward, you gradually lose touch with yourself. Step by step, your own inner core, your "heart's desire," is left behind until you no longer recognize it.`;
+
+      recommendations = `For our real development, it is essential to be truthful. Be honest with yourself and others about your genuine feelings and needs. Likewise, resist the temptation to impress others or inflate your importance. You will impress people more deeply by being authentic than by bragging about your successes or exaggerating your accomplishments.<br><br>
+      Take breaks. You can drive yourself and others to exhaustion with your relentless pursuit of your goals. Ambition and self-development are good qualities, but temper them with rest periods in which you reconnect more deeply with yourself. Sometimes taking three to five deep breaths is enough to recharge your battery and improve your outlook.`;
     } else if (userResult.archetype === "Nina") {
-      additionalInfo = "[No data]";
+      motivation = `To find themselves and their significance (to create an identity out of their inner experience).<br><br><em>Dislikes uniformity and regulation, attracted to creativity and putting their personal mark on things.</em>`;
+
+      additionalInfo = `You are <strong>Nina</strong>, the Individualist. You maintain your identity by seeing yourself as fundamentally different from others. You feel that you are unlike other human beings, and consequently, that no one can understand you or love you adequately. You may see yourself as uniquely talented, possessing special, one-of-a-kind gifts, but also as uniquely disadvantaged or flawed. You are acutely aware of and focused on your personal differences and deficiencies.<br><br>
+      While it is true that you often feel different from others, you do not really want to be alone. You may feel socially awkward or self-conscious, but you deeply wish to connect with people who understand you and your feelings. You long for someone to come into your life and appreciate the secret self that you have privately nurtured and hidden from the world. If, over time, such validation remains out of reach, you begin to build your identity around how unlike everyone else you are. (The outsider therefore comforts herself by becoming an insistent individualist: everything must be done on her own, in her own way, on her own terms.) Your mantra becomes "I am myself. Nobody understands me. I am different and special," while you secretly wish you could enjoy the easiness and confidence that others seem to enjoy.<br><br>
+      As long as you believe that there is something fundamentally wrong with you, you cannot allow yourself to experience or enjoy your many good qualities. To acknowledge your good qualities would be to lose your sense of identity (as a suffering victim) and to be without a relatively consistent personal identity (your Basic Fear). You will grow by learning to see that much of your story is not true—or at least it is not true any more. The old feelings begin to fall away once you stop telling yourself your old tale: it is irrelevant to who you are right now.<br><br>`;
+
+      recommendations = `Avoid putting off things until you are "in the right mood." Commit yourself to productive, meaningful work that will contribute to your good and that of others, no matter how small the contribution may be. Working consistently in the real world will create a context in which you can discover yourself and your talents. (Actually, you are happiest when you are working - that is, activating your potentials and realizing yourself. You will not "find yourself" in a vacuum or while waiting for inspiration to strike, so connect - and stay connected - with the real world.)<br><br>
+      Self-esteem and self-confidence will develop only from having positive experiences, whether or not you believe that you are ready to have them. Therefore, put yourself in the way of good. You may never feel that you are ready to take on a challenge of some sort, that you always need more time. (You typically never feel that you are sufficiently "together," but you must nevertheless have the courage to stop putting off your life.) Even if you start small, commit yourself to doing something that will bring out the best in you.<br><br>
+      Avoid lengthy conversations in your imagination, particularly if they are negative, resentful, or even excessively romantic. These conversations are essentially unreal and at best only rehearsals for action - although, as you know, you almost never say or do what you imagine you will. Instead of spending time imagining your life and relationships, begin to live them.`;
     } else if (userResult.archetype === "Andrew Graves") {
-      additionalInfo = "[No data]";
+      motivation = `To be capable and competent (to have something to contribute).<br><br><em>Dislikes intrusions on their time and space, attracted to depth and learning.</em>`;
+
+      additionalInfo = `You are <strong>Andrew Graves</strong>, the Investigator. You want to find out why things are the way they are. You want to understand how the world works, whether it is the cosmos, the microscopic world, the animal, vegetable, or mineral kingdoms - or the inner world of your imagination. You are always searching, asking questions, and delving into things in depth. You do not accept received opinions and doctrines, feeling a strong need to test the truth of most assumptions for yourself.<br><br>
+      You spend a lot of time observing and contemplating - listening to the sounds of wind or of a synthesizer, or taking notes on the activities in an anthill in your backyard. As you immerse yourself in your observations, you begin to internalize your knowledge and gain a feeling of self-confidence. You can then go out and play a piece on the synthesizer or tell people what you know about ants. You may also stumble across exciting new information or make new creative combinations (playing a piece of music based on recordings of wind and water). When you get verification of your observations and hypotheses, or see that others understand your work, it is a confirmation of your competency, and this fulfills your Basic Desire. ("You know what you are talking about.")<br><br>
+      Knowledge, understanding, and insight are thus highly valued by you, because your identity is built around "having ideas" and being someone who has something unusual and insightful to say. For this reason, you are not interested in exploring what is already familiar and well-established; rather, your attention is drawn to the unusual, the overlooked, the secret, the occult, the bizarre, the fantastic, the "unthinkable." Investigating "unknown territory" - knowing something that others do not know, or creating something that no one has ever experienced - allows you to have a niche for yourself that no one else occupies. You believe that developing this niche is the best way that you can attain independence and confidence.<br><br>
+      Thus, for your own security and self-esteem, you need to have at least one area in which you have a degree of expertise that will allow you to feel capable and connected with the world. You think, "I am going to find something that I can do really well, and then I will be able to meet the challenges of life. But I can’t have other things distracting me or getting in the way."`;
+
+      recommendations = `You see many possibilities but often do not know how to choose among them or judge which is more or less important. When you are caught in your fixation, a sense of perspective can be missing, and with it the ability to make accurate assessments. At such time, it can be helpful to get the advice of someone whose judgment you trust while you are gaining perspective on your situation. Doing this can also help you trust someone else, a difficulty for your type.<br><br>
+      You tend to find it difficult to trust people, to open up to them emotionally, or to make yourself accessible in various ways. Your awareness of potential problems in relationships may tend to create a self-fulfilling prophecy. It is important to remember that having conflicts with others is not unusual and that the healthy thing is to work them out rather than reject attachments with people by withdrawing into isolation. Having one or two intimate friends whom you trust enough to have conflicts with will enrich your life greatly.`;
+
     } else if (userResult.archetype === "Cult Leader") {
-      additionalInfo = "[No data]";
+      motivation = `To find security and support (to belong somewhere).<br><br><em>Dislikes unpredictability and rapid change, attracted to clear structures and foresight.</em>`;
+
+      additionalInfo = `You are the <strong>Cult Leader</strong>, the Loyalist. Of all the personality types, you are the most loyal to your friends and your beliefs. You will "go down with the ship" and hang on to relationships of all kinds far longer than most other types. You are also loyal to ideas, systems, and beliefs—even to the belief that all ideas or authorities should be questioned or defied. Indeed, you might not go along with the "status quo": your beliefs may be rebellious and anti-authoritarian, even revolutionary. In any case, you will typically fight for your beliefs more fiercely than you will fight for yourself, and you will defend your community or family more tenaciously than you will defend yourself.<br><br>
+      The reason you are so loyal to others is that you do not want to be abandoned and left without support - your Basic Fear. Thus, the central issue for you is a failure of self-confidence. You come to believe that you do not possess the internal resources to handle life’s challenges and vagaries alone, and so increasingly rely on structures, allies, beliefs, and supports outside yourself for guidance to survive. If suitable structures do not exist, you will help create and maintain them.<br><br>
+      The biggest problem for you is that you try to build safety in the environment without resolving your own emotional insecurities. When you learn to face your anxieties, however, you understand that although the world is always changing and is, by nature, uncertain, you can be serene and courageous in any circumstance. And you can attain the greatest gift of all, a sense of peace with yourself despite the uncertainties of life.`;
+
+      recommendations = `Remember that there is nothing unusual about being anxious since everyone is anxious and much more often than you might think. Learn to be more present to your anxiety, to explore it, and to come to terms with it. Work creatively with your tensions without turning to excessive amounts of alcohol (or other drugs) to allay them. In fact, if you are present and breathing fully, anxiety can be energizing, a kind of tonic that can help make you more productive and aware of what you are doing.<br><br>
+      Work on becoming more trusting. There are doubtless several people in your life you can turn to who care about you and who are trustworthy. If not, go out of your way to find someone trustworthy, and allow yourself to get close to that person. This will mean risking rejection and stirring up some of your deepest fears, but the risk is worth taking. You have a gift for getting people to like you, but you are unsure of yourself and may be afraid of making a commitment to them. Therefore, come down clearly on one side or the other of the fence in your relationships. Let people know how you feel about them.`;
     } else if (userResult.archetype === "Julia") {
-      additionalInfo = "[No data]";
+      motivation = `To be satisfied and content - to have their needs fulfilled.<br><br><em>Dislikes limitations and routines, attracted to new possibilities and excitement.</em>`;
+
+      additionalInfo = `You are <strong>Julia</strong>, the Enthusiast. You are enthusiastic about almost everything that catches your attention. You approach life with curiosity, optimism, and a sense of adventure, like "a kid in a candy store" who looks at the world in wide-eyed, rapt anticipation of all the good things you are about to experience. You are bold and vivacious, pursuing what you want in life with cheerful determination. You have a quality best described by the Yiddish word "chutzpah" - a kind of brash "nerviness."<br><br>
+      Your thinking is anticipatory: you foresee events and generate ideas "on the fly," favoring activities that stimulate your mind—which in turn generate more things to do and think about. You are not necessarily intellectual or studious by any standard definition, although you are often intelligent and can be widely read and highly verbal. Your mind moves rapidly from one idea to the next, making you gifted at brainstorming and synthesizing information. You are exhilarated by the rush of ideas and by the pleasure of being spontaneous, preferring broad overviews and the excitement of the initial stages of the creative process to probing a single topic in depth.<br><br>
+      Ironically, your wide-ranging curiosity and ability to learn quickly can also create problems for you. Because you are able to pick up many different skills with relative ease, it becomes more difficult for you to decide what to do with yourself. As a result, you also do not always value your abilities as you would if you had to struggle to gain them.<br><br>
+      Furthermore, as you speed up your pursuit of whatever seems to offer freedom and satisfaction, you tend to make worse choices, and you are less able to be satisfied because everything is experienced indirectly, through the dense filter of your fast-paced mental activity. The result is that you end up anxious, frustrated, and enraged, with fewer resources available to you physically, emotionally, or financially. You may end up ruining your health, your relationships, and your finances in your search for happiness.`;
+
+      recommendations = `Recognize your impulsiveness, and get in the habit of observing your impulses rather than giving in to them. This means letting most of your impulses pass and becoming a better judge of which ones are worth acting on. The more you can resist acting out your impulses, the more you will be able to focus on what is really good for you.<br><br>
+      Learn to listen to other people. They are often interesting, and you may learn things that will open new doors for you. Also learn to appreciate silence and solitude: you do not have to distract yourself (and protect yourself from anxiety) with constant noise from the television or the stereo. By learning to live with less external stimulation, you will learn to trust yourself. You will be happier than you expect because you will be satisfied with whatever you do, even if it is less than you have been doing.`;
     } else if (userResult.archetype === "??? (Entity)") {
-      additionalInfo = "[No data]";
+      motivation = `To protect themselves (to be in control of their own life and destiny).<br><br><em>Dislikes indecisiveness and indirectness, attracted to strength and strategic action.</em>`;
+
+      additionalInfo = `You are <strong>???</strong>, the Challenger. You enjoy taking on challenges yourself as well as giving others opportunities that challenge them to exceed themselves in some way. You are charismatic and have the physical and psychological capacities to persuade others to follow you into all kinds of endeavors - from starting a company, to rebuilding a city, to running a household, to waging war, to making peace.<br><br>
+      Although, to some extent, you fear physical harm, far more important is your fear of being disempowered or controlled in some way. You are extraordinarily tough and can absorb a great deal of physical punishment without complaint—a double-edged blessing since you often take your health and stamina for granted and overlook the health and well-being of others as well. Yet, you are desperately afraid of being hurt emotionally and will use your physical strength to protect your feelings and keep others at a safe emotional distance. Beneath the tough façade is vulnerability, although it has been covered over by a layer of emotional armor.<br><br>
+      Thus, you are often extremely industrious, but at the price of losing emotional contact with many of the people in your life. Those close to you may become increasingly dissatisfied with this state of affairs, which may confound you. ("I don't understand what my family is complaining about. I bust my hump to provide for them. Why are they disappointed with me?")<br><br>
+      When you are emotionally healthy, however, you have a resourceful, "can-do" attitude as well as a steady inner drive. You take the initiative and make things happen with a great passion for life. You are honorable and authoritative - a natural leader who has a solid, commanding presence. Your groundedness gives you abundant “common sense” as well as the ability to be decisive. You are willing to “take the heat,” knowing that any decision cannot please everyone. But as much as possible, you want to look after the interests of the people in your charge without playing favorites. You use your talents and fortitude to construct a better world for everyone in your life.`;
+
+      recommendations = `It goes against the grain, but act with self-restraint. You show true power when you forbear from asserting your will with others, even when you could. Your real power lies in your ability to inspire and uplift people. You are at your best when you take charge and help everyone through a crisis. Few will take advantage of you when you are caring, and you will do more to secure the loyalty and devotion of others by showing the greatness of your heart than you ever could by displays of raw power.<br><br>
+      Remember that the world is not against you. Many people in your life care about you and look up to you, but when you are in your fixation, you do not make this easy for them. Let in the affection that is available. Doing this will not make you weak, but will confirm the strength and support in yourself and your life. Also remember that by believing that others are against you and reacting against them, you tend to alienate them and confirm your own fears. Take stock of the people who truly are on your side, and let them know how important they are to you.`;
     } else if (userResult.archetype === "Mr. Graves") {
-      additionalInfo = "[No data]";
+      motivation = `To have inner stability (peace of mind).<br><br><em>Dislikes tension and conflict, attracted to harmony and stability.</em>`;
+
+      additionalInfo = `You are <strong>Mr. Graves</strong>, the Peacemaker. You are devoted to the quest for internal and external peace for yourself and others. You work to maintain your peace of mind just as you work to establish peace and harmony in your world.<br><br>
+      You may very well have the strength of the Entity (???), the sense of fun and adventure of Julia, the dutifulness of the Cult Leader, the intellectualism of Andrew, the creativity of Nina, the attractiveness of The Lady, the generosity of Ashley, and the idealism of Mrs. Graves. However, what you generally do not have is a sense of really inhabiting yourself - a strong sense of your own identity.<br><br>
+      Ironically, therefore, the only type you are not like is Mr. Graves himself. Being a separate self, an individual who must assert yourself against others, is terrifying to you. You would rather melt into someone else or quietly follow your idyllic daydreams.
+      You demonstrate the universal temptation to ignore the disturbing aspects of life and to seek some degree of peace and comfort by "numbing out." You respond to pain and suffering by attempting to live in a state of premature peacefulness, whether it is in a state of false spiritual attainment, or in more gross denial. More than any other type, you demonstrate the tendency to run away from the paradoxes and tensions of life by attempting to transcend them or by seeking to find simple and painless solutions to your problems.`;
+
+      recommendations = `Exert yourself. Force yourself to pay attention to what is going on. Do not drift off or tune out people, or daydream. Work on focusing your attention to become an active participant in the world around you. Try to become more mentally and emotionally engaged.<br><br>
+      Recognize that you also have aggressions, anxieties, and other feelings that you must deal with. Negative feelings and impulses are a part of you and they affect you emotionally and physically whether or not you acknowledge them. Furthermore, your negative emotions are often expressed inadvertently and get in the way of the peace and harmony you want in your relationships. It is best to get things out in the open first, at least by allowing yourself to become aware of your feelings.`;
     }
 
     newAnalysisContainer.innerHTML = `
-	  <h3>Analysis</h3>
+      <h3>Analysis</h3>
+      <p><strong>Motivation: </strong>${motivation}</p>
       <p>${additionalInfo}</p>
+      <p><strong>Recommendations: </strong>${recommendations}</p>
+      <p><em>The above information is provided for fun and is not guaranteed to be accurate.</em></p>
     `;
 
     document.getElementById('quiz-content').appendChild(newAnalysisContainer);
@@ -482,7 +557,7 @@ function showSecondary() {
     const newSecondaryContainer = document.createElement('div');
     newSecondaryContainer.id = 'secondary';
     newSecondaryContainer.innerHTML = `
-	  <h3>Secondary Type</h3>
+      <h3>Secondary Type</h3>
       <p>Not satisfied with your result? According to our calculations, it may be possible that you are: <strong>${userResult.secondaryArchetype}</strong></p>
       <p>Similarity Score: <strong>${userResult.secondarySimilarityScore.toFixed(3)}</strong></p>
     `;
@@ -530,6 +605,7 @@ function showDebug() {
   }
 }
 
+// We see that you've found out how the result is actually calculated. Don't spoil it for others!
 function calculateResult() {
   const archetypeScores = {
     "Mrs. Graves": { e: 2.5, es: 2.5, a: 4 , o: 2.5, c: 7, x: 3, },

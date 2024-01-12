@@ -77,31 +77,7 @@ button {
   margin: 20px auto;
 }
 
-#share {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-#debug {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-#secondary {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-#analysis {
+#share, #debug, #secondary, #analysis {
   margin-top: 20px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -128,4 +104,9 @@ button {
 footer {
   color: white;
   text-align: center;
+  font-size: small;
+}
+
+a:link, a:visited {
+  color: white;
 }
