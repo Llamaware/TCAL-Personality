@@ -116,7 +116,7 @@ const questions = [
     category: "es",
   },
   {
-    question: "9. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact - a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>In the enchanted forest, you come across a group of talking creatures having a lively celebration. They invite you to join them. How do you respond?",
+    question: "9. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact&#8212;a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>In the enchanted forest, you come across a group of talking creatures having a lively celebration. They invite you to join them. How do you respond?",
     type: "multiple-choice",
     options: [
       "1 - I enthusiastically join the celebration, eager to interact with the creatures, tell stories of my adventures, and make new allies.",
@@ -130,7 +130,7 @@ const questions = [
     category: "e",
   },
   {
-    question: "10. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact - a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>On your journey, you encounter a fellow traveler who is struggling with a difficult mechanical puzzle. How do you assist them?",
+    question: "10. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact&#8212;a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>On your journey, you encounter a fellow traveler who is struggling with a difficult mechanical puzzle. How do you assist them?",
     type: "multiple-choice",
     options: [
       "1 - I eagerly offer my help, patiently explaining the puzzle and working together with them to solve it.",
@@ -144,7 +144,7 @@ const questions = [
     category: "a",
   },
   {
-    question: "11. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact - a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>You receive a magical tome with information about events yet to come. How do you approach using the tome?",
+    question: "11. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact&#8212;a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>You receive a magical tome with information about events yet to come. How do you approach using the tome?",
     type: "multiple-choice",
     options: [
       "1 - I carefully study the tome, create an extensive plan that takes into account the future events precisely, and ensure every step aligns with this new plan.",
@@ -158,7 +158,7 @@ const questions = [
     category: "c",
   },
   {
-    question: "12. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact - a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>During the quest, your party encounters a ferocious monster that engages you in battle. As a psychological attack, you are suddenly assaulted by visions of your worst fears. How do you handle this situation?",
+    question: "12. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact&#8212;a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>During the quest, your party encounters a ferocious monster that engages you in battle. As a psychological attack, you are suddenly assaulted by visions of your worst fears. How do you handle this situation?",
     type: "multiple-choice",
     options: [
       "1 - I take a deep breath, acknowledge my fear, and courageously deflect the attacks, determined to overcome this enemy.",
@@ -172,7 +172,7 @@ const questions = [
     category: "es",
   },
   {
-    question: "13. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact - a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>As a dungeon clear reward, you receive an ancient manuscript containing powerful spells. How do you react to this newfound knowledge?",
+    question: "13. In this new world, you are chosen to be part of a quest to retrieve a powerful artifact&#8212;a sentient sword that can save your country from an impending disaster. The journey involves navigating through enchanted forests, solving riddles, and clearing dungeons.<br><br>As a dungeon clear reward, you receive an ancient manuscript containing powerful spells. How do you react to this newfound knowledge?",
     type: "multiple-choice",
     options: [
       "1 - I am excited to explore the potential of the spells, eager to learn and experiment with the magical abilities.",
@@ -515,7 +515,7 @@ function showAnalysis() {
       additionalInfo = `You are <strong>???</strong>, the Challenger. You enjoy taking on challenges yourself as well as giving others opportunities that challenge them to exceed themselves in some way. You are charismatic and have the physical and psychological capacities to persuade others to follow you into all kinds of endeavors&#8212;from starting a company, to rebuilding a city, to running a household, to waging war, to making peace.<br><br>
       Although, to some extent, you fear physical harm, far more important is your fear of being disempowered or controlled in some way. You are extraordinarily tough and can absorb a great deal of physical punishment without complaint—a double-edged blessing since you often take your health and stamina for granted and overlook the health and well-being of others as well. Yet, you are desperately afraid of being hurt emotionally and will use your physical strength to protect your feelings and keep others at a safe emotional distance. Beneath the tough façade is vulnerability, although it has been covered over by a layer of emotional armor.<br><br>
       Thus, you are often extremely industrious, but at the price of losing emotional contact with many of the people in your life. Those close to you may become increasingly dissatisfied with this state of affairs, which may confound you. ("I don't understand what my family is complaining about. I bust my hump to provide for them. Why are they disappointed with me?")<br><br>
-      When you are emotionally healthy, however, you have a resourceful, "can-do" attitude as well as a steady inner drive. You take the initiative and make things happen with a great passion for life. You are honorable and authoritative&#8212;a natural leader who has a solid, commanding presence. Your groundedness gives you abundant “common sense” as well as the ability to be decisive. You are willing to “take the heat,” knowing that any decision cannot please everyone. But as much as possible, you want to look after the interests of the people in your charge without playing favorites. You use your talents and fortitude to construct a better world for everyone in your life.`;
+      When you are emotionally healthy, however, you have a resourceful, "can-do" attitude as well as a steady inner drive. You take the initiative and make things happen with a great passion for life. You are honorable and authoritative&#8212;a natural leader who has a solid, commanding presence. Your groundedness gives you abundant "common sense" as well as the ability to be decisive. You are willing to "take the heat," knowing that any decision cannot please everyone. But as much as possible, you want to look after the interests of the people in your charge without playing favorites. You use your talents and fortitude to construct a better world for everyone in your life.`;
 
       recommendations = `It goes against the grain, but act with self-restraint. You show true power when you forbear from asserting your will with others, even when you could. Your real power lies in your ability to inspire and uplift people. You are at your best when you take charge and help everyone through a crisis. Few will take advantage of you when you are caring, and you will do more to secure the loyalty and devotion of others by showing the greatness of your heart than you ever could by displays of raw power.<br><br>
       Remember that the world is not against you. Many people in your life care about you and look up to you, but when you are in your fixation, you do not make this easy for them. Let in the affection that is available. Doing this will not make you weak, but will confirm the strength and support in yourself and your life. Also remember that by believing that others are against you and reacting against them, you tend to alienate them and confirm your own fears. Take stock of the people who truly are on your side, and let them know how important they are to you.`;
