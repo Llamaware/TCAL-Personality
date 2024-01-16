@@ -8,7 +8,6 @@
   <title>TCAL Personality Test</title>
 </head>
 <body>
-
   <div id="quiz-container">
     <div id="quiz-header">
       <h1>TCAL Personality Test</h1>
@@ -16,11 +15,22 @@
     </div>
     <div id="quiz-content">
       <div id="intro">
-	    <img src="img/profile.png" alt="Intro Image">
+        <img src="img/profile.png" alt="Intro Image">
         <p>This test will match you to one of nine characters from the game. There are 18 questions.<br><br>There are no right or wrong answers. We recommend that you read carefully and answer honestly in order to get accurate results.<br><br>(Content Warning: Questions discuss topics of death, abuse, suicide, and murder.)</p>
         <button onclick="startQuiz()">Start</button>
       </div>
     </div>
+  </div>
+  <div class="audio-player">
+    <audio id="audio" controls>
+      <source id="audio-source" src="img/audio1.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio><br>
+    <select id="audio-select" onchange="changeAudio()">
+      <option value="img/audio1.mp3">1. Q1-5 - Strain (ZE:VLR)</option>
+      <option value="img/audio2.mp3">2. Q6-13 - Shanghai Alice of Meiji 17 (EoSD)</option>
+      <option value="img/audio3.mp3">3. Q14-18 - Questioning ~ Allegro (PW:T&#38;T)</option>
+    </select>
   </div>
   <footer id="page-footer">
     <p>Created by onehalf and Elowen. Analysis based on <i>The Wisdom of the Enneagram.</i> <a href = "https://github.com/llamaware/tcal-personality">info</a></p>

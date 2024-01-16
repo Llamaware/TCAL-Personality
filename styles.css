@@ -110,3 +110,15 @@ footer {
 a:link, a:visited {
   color: white;
 }
+
+.audio-player {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    padding: 10px;
+}
+
+select {
+    padding: 5px;
+}

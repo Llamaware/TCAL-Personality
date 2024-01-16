@@ -692,4 +692,33 @@ function setRandomImage() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Set the default volume to 10%
+    var audio = document.getElementById("audio");
+    audio.volume = 0.5;
+
+    // Add an event listener for changing the audio file
+    var audioSelect = document.getElementById("audio-select");
+    audioSelect.addEventListener("change", changeAudio);
+
+    // Set the default selected option to "audio1.mp3"
+    audioSelect.value = "img/audio1.mp3";
+});
+
+function changeAudio() {
+    var audioSelect = document.getElementById("audio-select");
+    var audioSource = document.getElementById("audio-source");
+
+    // Get the selected audio file
+    var selectedAudio = audioSelect.options[audioSelect.selectedIndex].value;
+
+    // Update the audio source
+    audioSource.src = selectedAudio;
+
+    // Load and play the new audio
+    var audio = document.getElementById("audio");
+    audio.load();
+    audio.play();
+}
+
 window.onload = setRandomImage;

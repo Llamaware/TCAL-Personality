@@ -30,6 +30,14 @@ https://www.reddit.com/r/polls/comments/sfjblp/you_have_to_execute_one_of_these_
 
 https://www.reddit.com/r/hypotheticalsituation/comments/17dzlbk/a_supernatural_being_says_heshe_is_sending_you/
 
+### Soundtrack
+
+Shinji Hosoe - Zero Escape: Virtue's Last Reward
+
+ZUN - Touhou Koumakyou ~ The Embodiment of Scarlet Devil
+
+JTPaper - Ace Attorney: Trials and Tribulations OST [Remastered]
+
 ### Inspirations
 
 Zero Escape series  
