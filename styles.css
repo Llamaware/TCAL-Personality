@@ -112,13 +112,20 @@ a:link, a:visited {
 }
 
 .audio-player {
+  display: none;
+}
+
+@media (min-width: 1600px) {
+  .audio-player {
+    display: block;
     position: fixed;
     bottom: 0;
     right: 0;
     text-align: right;
     padding: 10px;
+  }
 }
 
 select {
-    padding: 5px;
+  padding: 5px;
 }

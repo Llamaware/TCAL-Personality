@@ -32,10 +32,8 @@ https://www.reddit.com/r/hypotheticalsituation/comments/17dzlbk/a_supernatural_b
 
 ### Soundtrack
 
-Shinji Hosoe - Zero Escape: Virtue's Last Reward
-
-ZUN - Touhou Koumakyou ~ The Embodiment of Scarlet Devil
-
+Shinji Hosoe - Zero Escape: Virtue's Last Reward  
+ZUN - Touhou Koumakyou ~ The Embodiment of Scarlet Devil  
 JTPaper - Ace Attorney: Trials and Tribulations OST [Remastered]
 
 ### Inspirations
